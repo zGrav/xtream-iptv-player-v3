@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageView n1:id="@id/main_image" style="?imageCardViewImageStyle"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <android.support.v17.leanback.widget.NonOverlappingRelativeLayout n2:id="@id/info_field" style="?imageCardViewInfoAreaStyle"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</merge>

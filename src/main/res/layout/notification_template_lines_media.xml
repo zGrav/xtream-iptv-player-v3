@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="2.0dip" n1:paddingRight="8.0dip" n1:paddingBottom="2.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:paddingEnd="8.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/line1" n1:paddingTop="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/notification_content_margin_start" n1:layout_marginStart="@dimen/notification_content_margin_start">
+        <TextView n1:textAppearance="@style/TextAppearance.Compat.Notification.Title.Media" n1:ellipsize="marquee" n1:id="@id/title" n1:fadingEdge="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_weight="1.0" />
+        <DateTimeView n1:textAppearance="@style/TextAppearance.Compat.Notification.Time.Media" n1:layout_gravity="center" n1:id="@id/time" n1:paddingLeft="8.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_weight="0.0" n1:paddingStart="8.0dip" />
+        <Chronometer n1:textAppearance="@style/TextAppearance.Compat.Notification.Time.Media" n1:layout_gravity="center" n1:id="@id/chronometer" n1:paddingLeft="8.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_weight="0.0" n1:paddingStart="8.0dip" />
+    </LinearLayout>
+    <TextView n1:textAppearance="@style/TextAppearance.Compat.Notification.Line2.Media" n1:ellipsize="marquee" n1:id="@id/text2" n1:visibility="gone" n1:fadingEdge="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/notification_content_margin_start" n1:layout_marginTop="-2.0dip" n1:layout_marginBottom="-2.0dip" n1:singleLine="true" n1:layout_marginStart="@dimen/notification_content_margin_start" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/line3" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/notification_content_margin_start" n1:layout_marginStart="@dimen/notification_content_margin_start">
+        <TextView n1:textAppearance="@style/TextAppearance.Compat.Notification.Media" n1:ellipsize="marquee" n1:layout_gravity="center" n1:id="@id/text" n1:fadingEdge="horizontal" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_weight="1.0" />
+        <TextView n1:textAppearance="@style/TextAppearance.Compat.Notification.Info.Media" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/info" n1:paddingLeft="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_weight="0.0" n1:paddingStart="8.0dip" />
+    </LinearLayout>
+</LinearLayout>

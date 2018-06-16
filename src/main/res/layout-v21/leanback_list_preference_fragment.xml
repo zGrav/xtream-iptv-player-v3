@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/main_frame" n1:background="@color/lb_preference_decor_list_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:transitionGroup="false" n1:elevation="@dimen/lb_preference_decor_elevation"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/decor_title_container" n1:background="?defaultBrandColor" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:transitionGroup="false" n1:elevation="@dimen/lb_preference_decor_title_container_elevation">
+        <TextView n1:textSize="@dimen/lb_preference_decor_title_text_size" n1:textColor="?android:textColorPrimary" n1:gravity="center_vertical" n1:id="@id/decor_title" n1:layout_width="fill_parent" n1:layout_height="@dimen/lb_preference_decor_title_text_height" n1:layout_marginTop="@dimen/lb_preference_decor_title_margin_top" n1:singleLine="true" n1:fontFamily="sans-serif-condensed" n1:layout_marginStart="@dimen/lb_preference_decor_title_margin_start" n1:layout_marginEnd="@dimen/lb_preference_decor_title_margin_end" />
+    </FrameLayout>
+    <TextView n1:id="@android:id/message" n1:paddingTop="14.0dip" n1:paddingBottom="14.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:fontFamily="sans-serif-condensed" n1:paddingStart="24.0dip" n1:paddingEnd="56.0dip" />
+    <android.support.v17.leanback.widget.VerticalGridView n1:id="@android:id/list" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:transitionGroup="true" />
+</LinearLayout>

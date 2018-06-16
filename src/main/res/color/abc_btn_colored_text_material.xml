@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false" n1:color="?android:textColorPrimary" n2:alpha="?android:disabledAlpha"
+      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <item n3:color="?android:textColorPrimaryInverse"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</selector>

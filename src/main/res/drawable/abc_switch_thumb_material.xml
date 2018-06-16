@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_checked="true" n1:drawable="@drawable/abc_btn_switch_to_on_mtrl_00012"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:drawable="@drawable/abc_btn_switch_to_on_mtrl_00001"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</selector>

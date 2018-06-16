@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v17.leanback.widget.GuidanceStylingRelativeLayout n1:id="@id/guidance_container" style="?guidanceContainerStyle">
+        <ImageView n1:id="@id/guidance_icon" style="?guidanceIconStyle" />
+        <TextView n1:id="@id/guidance_breadcrumb" style="?guidanceBreadcrumbStyle" />
+        <TextView n1:id="@id/guidance_title" style="?guidanceTitleStyle" />
+        <TextView n1:id="@id/guidance_description" style="?guidanceDescriptionStyle" />
+    </android.support.v17.leanback.widget.GuidanceStylingRelativeLayout>
+</FrameLayout>

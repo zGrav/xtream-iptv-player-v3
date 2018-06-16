@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v17.leanback.app.GuidedStepRootLayout n1:gravity="bottom" n1:orientation="vertical" n1:id="@id/guidedstep_root" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:weightSum="2.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/guidedstep_background_view_root" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="?guidedStepHeightWeight">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/content_frame" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:baselineAligned="false">
+            <android.support.v17.leanback.widget.NonOverlappingFrameLayout n1:id="@id/content_fragment" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0" />
+            <android.support.v17.leanback.widget.NonOverlappingFrameLayout n1:orientation="horizontal" n1:id="@id/action_fragment_root" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="?guidedActionContentWidthWeight" n1:paddingStart="@dimen/lb_guidedactions_section_shadow_width" n1:transitionName="action_fragment_root" n1:transitionGroup="false">
+                <android.support.v17.leanback.widget.NonOverlappingView n1:orientation="horizontal" n1:id="@id/action_fragment_background" n1:background="?guidedActionsBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:transitionName="action_fragment_background" n1:elevation="?guidedActionsElevation" n1:outlineProvider="paddedBounds" />
+                <android.support.v17.leanback.widget.NonOverlappingLinearLayout n1:orientation="horizontal" n1:id="@id/action_fragment" n1:focusable="true" n1:descendantFocusability="afterDescendants" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:transitionName="action_fragment" n1:transitionGroup="false" n1:elevation="?guidedActionsElevation" />
+            </android.support.v17.leanback.widget.NonOverlappingFrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v17.leanback.app.GuidedStepRootLayout>

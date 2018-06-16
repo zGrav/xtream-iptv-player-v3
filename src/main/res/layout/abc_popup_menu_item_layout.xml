@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.view.menu.ListMenuItemView n1:layout_width="fill_parent" n1:layout_height="?dropdownListPreferredItemHeight" n1:minWidth="196.0dip" style="@style/RtlOverlay.Widget.AppCompat.PopupMenuItem"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_gravity="center_vertical" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" style="@style/RtlOverlay.Widget.AppCompat.PopupMenuItem.InternalGroup">
+        <TextView n1:textAppearance="?textAppearanceLargePopupMenu" n1:ellipsize="marquee" n1:id="@id/title" n1:fadingEdge="horizontal" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_alignParentTop="true" style="@style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Text" />
+        <TextView n1:textAppearance="?textAppearanceSmallPopupMenu" n1:id="@id/shortcut" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:layout_below="@id/title" style="@style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Text" />
+    </RelativeLayout>
+    <ImageView n1:layout_gravity="center" n1:id="@id/submenuarrow" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:scaleType="center" n1:layout_marginStart="8.0dip" />
+</android.support.v7.view.menu.ListMenuItemView>

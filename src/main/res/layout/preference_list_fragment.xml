@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@android:id/list_container" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+    <TextView n1:gravity="center" n1:id="@android:id/empty" n1:padding="8.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</LinearLayout>

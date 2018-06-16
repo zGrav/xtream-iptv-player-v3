@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageView n1:layout_gravity="end|center" n1:id="@id/title_badge" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="@dimen/lb_browse_title_icon_height" n1:src="@null" n1:adjustViewBounds="true" n1:maxWidth="@dimen/lb_browse_title_icon_max_width" style="?browseTitleIconStyle"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <TextView n2:layout_gravity="end|center" n2:id="@id/title_text" n2:layout_width="wrap_content" n2:layout_height="@dimen/lb_browse_title_height" style="?browseTitleTextStyle"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <android.support.v17.leanback.widget.SearchOrbView n3:layout_gravity="start|center" n3:id="@id/title_orb" n3:visibility="invisible" n3:layout_width="wrap_content" n3:layout_height="wrap_content" n3:transitionGroup="true"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</merge>

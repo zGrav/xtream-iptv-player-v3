@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/app_video_box" n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <z.xtreamiptv.playerv3.view.nstplayer.IjkVideoView n1:id="@id/video_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="0.0px">
+        <LinearLayout n1:gravity="center" n1:id="@id/app_video_replay" n1:background="#b3616161" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/app_video_replay_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_play_circle_outline_white_36dp" n1:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <FrameLayout n1:id="@id/app_video_center_box" n1:background="@drawable/app_video_center_bg" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/app_video_volume_box" n1:visibility="gone" n1:layout_width="80.0dip" n1:layout_height="80.0dip">
+                <ImageView n1:layout_gravity="center" n1:id="@id/app_video_volume_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_volume_up_white_36dp" />
+                <TextView n1:textSize="18.0dip" n1:textColor="@android:color/white" n1:id="@id/app_video_volume" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="50%" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/app_video_brightness_box" n1:visibility="gone" n1:layout_width="80.0dip" n1:layout_height="80.0dip">
+                <ImageView n1:layout_gravity="center" n1:id="@id/app_video_brightness_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_brightness_6_white_36dp" />
+                <TextView n1:textSize="16.0dip" n1:textColor="@android:color/white" n1:id="@id/app_video_brightness" n1:paddingTop="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="50%" n1:layout_below="@id/operation_bg" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/app_video_fastForward_box" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="8.0dip">
+                <TextView n1:textSize="16.0dip" n1:textColor="@android:color/white" n1:id="@id/app_video_fastForward" n1:paddingTop="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="50%" n1:layout_below="@id/operation_bg" />
+                <LinearLayout n1:orientation="horizontal" n1:paddingTop="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="16.0dip" n1:textColor="@android:color/white" n1:id="@id/app_video_fastForward_target" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="50%" />
+                    <TextView n1:textSize="16.0dip" n1:textColor="@color/Grey_300" n1:id="@id/app_video_fastForward_all" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="50%" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout n1:gravity="center" n1:id="@id/app_video_status" n1:background="@android:color/background_dark" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:textSize="14.0dip" n1:textColor="@android:color/white" n1:id="@id/app_video_status_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/small_problem" />
+        </LinearLayout>
+        <ProgressBar n1:id="@id/app_video_loading" n1:visibility="gone" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:indeterminateOnly="true" n1:indeterminateBehavior="repeat" n1:layout_centerInParent="true" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/root" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true">
+            <RelativeLayout n1:orientation="horizontal" n1:id="@id/middle" n1:focusable="true" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                <LinearLayout n1:id="@id/ll_categories_view" n1:visibility="gone" n1:layout_width="300.0dip" n1:layout_height="wrap_content" n1:layout_alignParentRight="true">
+                    <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/btn_category_back" n1:background="#96000000" n1:padding="5.0dip" n1:layout_width="30.0dip" n1:layout_height="40.0dip" n1:foreground="?android:selectableItemBackground" n2:srcCompat="@drawable/left_icon_cat" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                    <TextView n1:textSize="14.0dip" n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/tv_categories_view" n1:background="#96000000" n1:padding="10.0dip" n1:visibility="visible" n1:nextFocusDown="@id/et_search" n1:layout_width="240.0dip" n1:layout_height="40.0dip" n1:layout_alignParentRight="true" n1:textAlignment="center" />
+                    <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/btn_category_fwd" n1:background="#96000000" n1:padding="5.0dip" n1:layout_width="30.0dip" n1:layout_height="40.0dip" n1:foreground="?android:selectableItemBackground" n3:srcCompat="@drawable/right_icon_cat" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                </LinearLayout>
+                <EditText n1:textSize="15.0dip" n1:textStyle="bold" n1:textColor="@color/white" n1:textColorHint="@color/white" n1:id="@id/et_search" n1:background="@drawable/selector_search_fields" n1:padding="10.0dip" n1:focusable="true" n1:visibility="gone" n1:nextFocusDown="@id/lv_ch" n1:layout_width="300.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="2.0dip" n1:hint="Search" n1:layout_below="@id/ll_categories_view" n1:layout_alignParentRight="true" n1:imeOptions="flagNoExtractUi" />
+                <ListView n1:id="@id/lv_ch" n1:background="#96000000" n1:focusable="true" n1:visibility="gone" n1:nextFocusUp="@id/et_search" n1:layout_width="300.0dip" n1:layout_height="wrap_content" n1:listSelector="@drawable/bg_key" n1:layout_below="@id/et_search" n1:layout_alignParentRight="true">
+                    <requestFocus />
+                </ListView>
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/app_video_bottom_box" n1:padding="8.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+                <ImageView n1:id="@id/app_video_play" n1:padding="8.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_play_arrow_white_24dp" n1:layout_centerVertical="true" />
+                <TextView n1:textSize="12.0dip" n1:textColor="@android:color/white" n1:id="@id/app_video_currentTime" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="00:00" n1:layout_centerVertical="true" />
+                <SeekBar n1:textAppearance="?android:textAppearanceSmall" n1:id="@id/app_video_seekBar" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:layout_marginRight="3.0dip" n1:layout_toLeftOf="@id/app_video_endTime" n1:layout_toRightOf="@id/app_video_currentTime" n1:layout_centerVertical="true" />
+                <TextView n1:textSize="12.0dip" n1:textColor="@android:color/white" n1:id="@id/app_video_endTime" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="00:00" n1:layout_toLeftOf="@id/app_video_fullscreen" n1:layout_centerVertical="true" />
+                <ImageView n1:id="@id/app_video_fullscreen" n1:paddingLeft="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_fullscreen_white_24dp" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/ll_seekbar_time" n1:background="#96000000" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="48.0dip" n1:foregroundGravity="center">
+                <ImageView n1:id="@id/iv_channel_logo" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginLeft="20.0dip" n1:src="@drawable/iptv_placeholder" />
+                <RelativeLayout n1:id="@id/rl_epgLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="5.0dip">
+                    <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_current_program" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                    <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_current_time" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_above="@id/progressBar" n1:layout_alignRight="@id/progressBar" />
+                    <ProgressBar n1:id="@id/progressBar" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="3.0dip" n1:progressDrawable="@drawable/epgprogress" n1:layout_below="@id/tv_current_program" n1:layout_centerHorizontal="true" style="?android:progressBarStyleHorizontal" />
+                    <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_next_program" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/progressBar" />
+                    <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_next_program_time" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/progressBar" n1:layout_alignRight="@id/progressBar" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/controls" n1:background="#96000000" n1:paddingBottom="10.0dip" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="35.0dip">
+                <android.support.v7.widget.AppCompatImageView n1:layout_gravity="right" n1:id="@id/btn_lock" n1:background="@null" n1:padding="5.0dip" n1:visibility="gone" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="20.0dip" n1:foreground="?android:selectableItemBackground" n1:layout_weight="0.0" n4:srcCompat="@drawable/hplib_ic_subtitle" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="70.0dip" n1:layout_marginRight="70.0dip" n1:layout_weight="1.0">
+                    <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/exo_prev" n1:background="@null" n1:padding="7.0dip" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginRight="24.0dip" n1:foreground="?android:selectableItemBackground" n1:cropToPadding="false" n1:minWidth="32.0dip" n1:layout_weight="1.0" n5:srcCompat="@drawable/hplib_ic_previous" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                    <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/exo_rew" n1:background="@null" n1:padding="7.0dip" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginRight="24.0dip" n1:foreground="?android:selectableItemBackground" n1:minWidth="32.0dip" n1:layout_weight="1.0" n6:srcCompat="@drawable/hplib_ic_rewind" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+                    <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/exo_pause" n1:background="@null" n1:padding="7.0dip" n1:visibility="visible" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginRight="24.0dip" n1:foreground="?android:selectableItemBackground" n1:minWidth="32.0dip" n1:layout_weight="1.0" n7:srcCompat="@drawable/hplib_ic_pause" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+                    <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/exo_play" n1:background="@null" n1:padding="7.0dip" n1:visibility="gone" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginRight="24.0dip" n1:foreground="?android:selectableItemBackground" n1:minWidth="32.0dip" n1:layout_weight="1.0" n8:srcCompat="@drawable/hplib_ic_play_download" xmlns:n8="http://schemas.android.com/apk/res-auto" />
+                    <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/exo_ffwd" n1:background="@null" n1:padding="7.0dip" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginRight="24.0dip" n1:foreground="?android:selectableItemBackground" n1:minWidth="32.0dip" n1:layout_weight="1.0" n9:srcCompat="@drawable/hplib_ic_forward" xmlns:n9="http://schemas.android.com/apk/res-auto" />
+                    <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/exo_next" n1:background="@null" n1:padding="7.0dip" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:foreground="?android:selectableItemBackground" n1:minWidth="32.0dip" n1:layout_weight="1.0" n10:srcCompat="@drawable/hplib_ic_next" xmlns:n10="http://schemas.android.com/apk/res-auto" />
+                </LinearLayout>
+                <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/btn_screen" n1:background="@null" n1:padding="5.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:foreground="?android:selectableItemBackground" n1:cropToPadding="false" n1:layout_weight="0.0" n1:alpha="1.0" />
+                <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/btn_list" n1:background="@null" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="24.0dip" n1:foreground="?android:selectableItemBackground" n1:cropToPadding="false" n1:layout_weight="0.0" n1:alpha="1.0" n11:srcCompat="@drawable/hplib_ic_subtitle" xmlns:n11="http://schemas.android.com/apk/res-auto" />
+                <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/btn_settings" n1:background="@null" n1:padding="5.0dip" n1:visibility="gone" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginRight="20.0dip" n1:text="Settings" n1:layout_weight="0.0" n1:foregroundGravity="right" n12:srcCompat="@drawable/hplib_ic_settings" xmlns:n12="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout n1:gravity="center" n1:layout_gravity="center" n1:id="@id/loadingVPanel" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ProgressBar n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:indeterminate="true" />
+        </RelativeLayout>
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/unlock_panel" n1:background="#96000000" n1:padding="10.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip">
+            <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/btn_unlock" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n13:srcCompat="@drawable/hplib_ic_unlock" xmlns:n13="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/seekbar_center_text" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_centerHorizontal="true">
+            <android.support.v7.widget.AppCompatTextView n1:textSize="50.0dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/txt_seek_currTime" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="00:44" />
+            <android.support.v7.widget.AppCompatTextView n1:textSize="50.0dip" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/txt_seek_secs" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="[ +00:10 ]" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/app_video_top_box" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/app_video_finish" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_chevron_left_white_36dp" />
+        <TextView n1:textSize="24.0dip" n1:textColor="@android:color/white" n1:id="@id/app_video_title" n1:padding="8.0dip" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

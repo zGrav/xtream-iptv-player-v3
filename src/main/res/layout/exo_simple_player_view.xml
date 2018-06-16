@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout n1:layout_gravity="center" n1:id="@id/exo_content_frame" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <View n1:id="@id/exo_shutter" n1:background="@android:color/black" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <ImageView n1:id="@id/exo_artwork" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="fitXY" />
+        <com.google.android.exoplayer2.ui.SubtitleView n1:id="@id/exo_subtitles" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+    <FrameLayout n2:id="@id/exo_overlay" n2:layout_width="fill_parent" n2:layout_height="fill_parent"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <View n3:id="@id/exo_controller_placeholder" n3:layout_width="fill_parent" n3:layout_height="fill_parent"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</merge>

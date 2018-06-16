@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false" n1:color="?android:colorForeground" n1:alpha="0.1"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_checked="true" n2:color="?colorControlActivated" n2:alpha="0.3"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:color="?android:colorForeground" n3:alpha="0.3"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</selector>

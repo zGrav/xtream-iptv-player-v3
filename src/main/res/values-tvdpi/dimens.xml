@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="dashboard_total_text">20.0dip</dimen>
+    <dimen name="epg_channel_layout_height">70.0dip</dimen>
+    <dimen name="epg_channel_layout_margin_left">80.0dip</dimen>
+    <dimen name="epg_channel_layout_width">270.0dip</dimen>
+    <dimen name="epg_channel_maximum_length">180.0dip</dimen>
+    <dimen name="epg_event_layout_text">18.0dip</dimen>
+    <dimen name="epg_time_bar_text">16.0dip</dimen>
+    <dimen name="livetv_channels_epg_text">16.0dip</dimen>
+    <dimen name="livetv_channels_epg_time">16.0dip</dimen>
+    <dimen name="livetv_channels_name_text">18.0dip</dimen>
+    <dimen name="livetv_rl_channel_bottom_height">110.0dip</dimen>
+    <dimen name="livetv_rl_streams_layout_height">200.0dip</dimen>
+    <dimen name="nst_player_app_video_title_text">26.0dip</dimen>
+    <dimen name="nst_player_epg_text">16.0dip</dimen>
+    <dimen name="nst_player_epg_time">16.0dip</dimen>
+    <dimen name="nst_player_et_search_text">24.0dip</dimen>
+    <dimen name="nst_player_list_view_text">20.0dip</dimen>
+    <dimen name="nst_player_tv_logo_height">50.0dip</dimen>
+</resources>

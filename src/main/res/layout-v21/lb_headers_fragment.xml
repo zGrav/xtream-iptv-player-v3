@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/browse_headers_root" n1:layout_width="@dimen/lb_browse_headers_width" n1:layout_height="fill_parent" n1:paddingEnd="@dimen/lb_browse_header_padding_end" n1:transitionGroup="true" n1:elevation="@dimen/lb_browse_headers_z"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v17.leanback.widget.VerticalGridView n1:id="@id/browse_headers" n1:layout_width="@dimen/lb_browse_headers_width" n1:layout_height="fill_parent" style="?headersVerticalGridStyle" />
+    <View n1:id="@id/fade_out_edge" n1:background="@drawable/lb_headers_right_fading" n1:layout_width="@dimen/lb_browse_header_fading_length" n1:layout_height="fill_parent" n1:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_selected="true" n1:color="@color/white"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_focused="true" n2:color="@color/black"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:state_pressed="true" n3:color="@color/white"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:color="@color/white"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</selector>

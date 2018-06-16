@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/root" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:keepScreenOn="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView n1:id="@id/player_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:controller_layout_id="@layout/exo_playback_control_view_custom_archive" n2:resize_mode="fill" n2:show_timeout="4000" n2:theme="@style/AppTheme" n2:use_controller="true" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:layout_gravity="center" n1:orientation="vertical" n1:background="#88000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="10.0sp" n1:id="@id/debug_text_view" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="horizontal" n1:id="@id/controls_root" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton n1:textColor="@color/white" n1:id="@id/retry_button" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/retry" n1:drawableLeft="@android:drawable/stat_notify_sync_noanim" n1:drawablePadding="10.0dip" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar n1:layout_gravity="center" n1:id="@id/progress_loader" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</FrameLayout>

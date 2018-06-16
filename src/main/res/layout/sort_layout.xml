@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/rl_password_prompt" n1:background="@color/dark_black2" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <android.support.v7.widget.CardView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="20.0dip">
+            <RelativeLayout n1:background="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <RelativeLayout n1:id="@id/ll_expandable" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
+                    <TextView n1:textSize="20.0dip" n1:textColor="@color/black" n1:id="@id/tv_parental_password" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:text="Sort According to : " n1:drawableLeft="@drawable/sort" n1:drawablePadding="7.0dip" n1:fontFamily="@string/font_family_medium" />><ImageView n1:id="@id/iv_div" n1:background="@color/black" n1:layout_width="fill_parent" n1:layout_height="2.0px" n1:layout_marginTop="15.0dip" n1:layout_below="@id/tv_parental_password" />
+                    <RadioGroup n1:id="@id/rg_radio" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_below="@id/iv_div">
+                        <RadioButton n1:textSize="18.0dip" n1:textColor="@color/black" n1:id="@id/rb_normal" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:text="@string/sort_default" />
+                        <RadioButton n1:textSize="18.0dip" n1:textColor="@color/black" n1:id="@id/rb_lastadded" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:text="@string/sort_last_added" />
+                        <RadioButton n1:textSize="18.0dip" n1:textColor="@color/black" n1:id="@id/rb_atoz" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:text="@string/sort_atoz" />
+                        <RadioButton n1:textSize="18.0dip" n1:textColor="@color/black" n1:id="@id/rb_ztoa" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:text="@string/sort_ztoa" />
+                    </RadioGroup>
+                    <Button n1:textColor="@drawable/selector_save_color" n1:id="@id/bt_save_password" n1:background="@drawable/selector_save_button" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="20.0dip" n1:text="@string/bt_submit" n1:layout_below="@id/rg_radio" />><Button n1:textColor="@drawable/selector_save_color" n1:id="@id/bt_close" n1:background="@drawable/selector_save_button" n1:focusable="true" n1:nextFocusLeft="@id/bt_save_password" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="25.0dip" n1:layout_marginBottom="20.0dip" n1:text="@string/close" n1:layout_below="@id/rg_radio" n1:layout_alignParentEnd="true" />></RelativeLayout>
+            </RelativeLayout>></android.support.v7.widget.CardView>></RelativeLayout>
+</RelativeLayout>

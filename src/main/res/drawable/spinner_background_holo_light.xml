@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false" n1:drawable="@drawable/spinner_disabled_holo_light"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_pressed="true" n2:drawable="@drawable/spinner_pressed_holo_light"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:state_focused="true" n3:state_pressed="false" n3:drawable="@drawable/spinner_focused_holo_light"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:drawable="@drawable/spinner_default_holo_light"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</selector>

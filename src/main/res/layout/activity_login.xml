@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/activity_login" n1:background="@drawable/splash_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/iv_logo" n1:layout_width="100.0dip" n1:layout_height="100.0dip" n1:layout_marginTop="30.0dip" n1:src="@drawable/logo" n1:layout_centerHorizontal="true" />
+            <TextView n1:textColor="@color/white" n1:id="@id/tv_enter_credentials" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:text="@string/credential_detail" n1:layout_below="@id/iv_logo" n1:layout_centerHorizontal="true" n1:fontFamily="sans-serif" />
+            <EditText n1:textSize="15.0dip" n1:textColor="@color/black" n1:textColorHint="@color/white" n1:id="@id/et_email" n1:background="@drawable/selector_login_fields" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:focusable="true" n1:nextFocusUp="@id/et_activation_code" n1:nextFocusDown="@id/et_password" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="25.0dip" n1:hint="@string/username" n1:maxLines="1" n1:lines="1" n1:layout_below="@id/tv_enter_credentials" n1:layout_centerHorizontal="true" n1:inputType="textEmailAddress" n1:imeOptions="actionNext" n1:textCursorDrawable="@null" n1:fontFamily="sans-serif" />
+            <EditText n1:textSize="15.0dip" n1:textColor="@color/black" n1:textColorHint="@color/white" n1:id="@id/et_password" n1:background="@drawable/selector_login_fields" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:focusable="true" n1:nextFocusUp="@id/et_email" n1:nextFocusDown="@id/et_sever_url" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="25.0dip" n1:hint="@string/password" n1:maxLines="1" n1:lines="1" n1:layout_below="@id/et_email" n1:layout_centerHorizontal="true" n1:inputType="textPassword" n1:textCursorDrawable="@null" n1:fontFamily="sans-serif" />
+            <EditText n1:textSize="15.0dip" n1:textColor="@color/black" n1:textColorHint="@color/white" n1:id="@id/et_sever_url" n1:background="@drawable/selector_login_fields" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:focusable="true" n1:nextFocusUp="@id/et_password" n1:nextFocusDown="@id/bt_submit" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="25.0dip" n1:hint="@string/serverurl" n1:maxLines="1" n1:lines="1" n1:layout_below="@id/et_password" n1:layout_centerHorizontal="true" n1:inputType="textUri" n1:textCursorDrawable="@null" n1:fontFamily="sans-serif" />
+            <Spinner n1:id="@id/sp_xtream_version_selection" n1:background="@drawable/selector_login_fields" n1:visibility="gone" n1:nextFocusUp="@id/et_sever_url" n1:nextFocusDown="@id/bt_submit" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="25.0dip" n1:layout_below="@id/et_sever_url" />
+            <Button n1:textSize="15.0dip" n1:textColor="#ff0e2633" n1:gravity="center" n1:id="@id/bt_submit" n1:background="@drawable/selector_button" n1:focusable="true" n1:nextFocusUp="@id/et_sever_url" n1:nextFocusDown="@id/cb_remember_me" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="25.0dip" n1:text="@string/submit" n1:layout_below="@id/sp_xtream_version_selection" n1:fontFamily="sans-serif-bold" />
+
+            <CheckBox
+                n1:id="@+id/cb_remember_me"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_below="@id/bt_submit"
+                n1:layout_marginLeft="25.0dip"
+                n1:layout_marginTop="5.0dip"
+                n1:background="@drawable/selector_checkbox"
+                n1:focusable="true"
+                n1:fontFamily="sans-serif-medium"
+                n1:nextFocusUp="@id/bt_submit"
+                n1:paddingRight="7.0dip"
+                n1:text="@string/remember_me"
+                n1:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

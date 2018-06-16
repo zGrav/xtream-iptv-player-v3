@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <android.support.v17.leanback.widget.NonOverlappingView n1:id="@id/lb_shadow_normal" n1:background="@drawable/lb_card_shadow_normal" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <android.support.v17.leanback.widget.NonOverlappingView n2:id="@id/lb_shadow_focused" n2:background="@drawable/lb_card_shadow_focused" n2:layout_width="fill_parent" n2:layout_height="fill_parent" n2:alpha="0.0"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</merge>

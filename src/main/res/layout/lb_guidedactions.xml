@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/guidedactions_root" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v17.leanback.widget.NonOverlappingView n1:id="@id/guidedactions_list_background" n1:background="?guidedActionsBackgroundDark" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <android.support.v17.leanback.widget.GuidedActionsRelativeLayout n1:id="@id/guidedactions_content" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <android.support.v17.leanback.widget.VerticalGridView n1:id="@id/guidedactions_list" style="?guidedActionsListStyle" />
+        <android.support.v17.leanback.widget.NonOverlappingView n1:id="@id/guidedactions_sub_list_background" n1:background="?guidedActionsBackgroundDark" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_alignLeft="@id/guidedactions_sub_list" n1:layout_alignTop="@id/guidedactions_sub_list" n1:layout_alignRight="@id/guidedactions_sub_list" n1:layout_alignBottom="@id/guidedactions_sub_list" />
+        <android.support.v17.leanback.widget.VerticalGridView n1:id="@id/guidedactions_sub_list" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginTop="-1.0dip" style="?guidedSubActionsListStyle" />
+    </android.support.v17.leanback.widget.GuidedActionsRelativeLayout>
+</RelativeLayout>

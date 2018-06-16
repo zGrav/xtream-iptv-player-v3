@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item n1:left="3.0dip" n1:top="3.0dip" n1:right="3.0dip" n1:bottom="3.0dip"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <solid n1:color="#ffebebeb" />
+            <corners n1:radius="2.0dip" />
+            <padding n1:left="50.0dip" n1:top="8.0dip" n1:right="11.0dip" n1:bottom="7.0dip" />
+        </shape>
+    </item>
+    <item n2:left="-36.0dip"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <bitmap n2:gravity="center|left" n2:src="@drawable/googleg_disabled_color_18" />
+    </item>
+</layer-list>

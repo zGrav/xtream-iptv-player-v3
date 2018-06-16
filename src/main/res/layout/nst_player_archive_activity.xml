@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/nst_player_archive" />
+    <ScrollView n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/tv_speed" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <EditText n1:gravity="center|left|top" n1:id="@id/et_url" n1:layout_width="0.0px" n1:layout_height="wrap_content" n1:layout_margin="8.0dip" n1:text="http://p5.giffy.be:8080/movie/amantestapp/amantestapp/33415.mp4" n1:maxLines="4" n1:layout_weight="1.0" />
+                <Button n1:id="@id/btn_play" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_margin="8.0dip" n1:text="play" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <Button n1:id="@id/btn_pause" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="pause" />
+                <Button n1:id="@id/btn_start" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="start" />
+                <Button n1:id="@id/btn_toggle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="toggleFullScreen" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <Button n1:id="@id/btn_forward" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="forward" />
+                <Button n1:id="@id/btn_back" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="back" />
+                <Button n1:id="@id/btn_toggle_ratio" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="toggleRatio" />
+            </LinearLayout>
+            <Button n1:id="@id/btn_play_sample_1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="play sample 1" />
+            <Button n1:id="@id/btn_play_sample_2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="play sample 2" />
+            <Button n1:id="@id/btn_play_sample_3" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="play sample 3(https)" />
+            <Button n1:id="@id/btn_open" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="play by out of the box player" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ProgressBar n1:id="@id/playback_progress" n1:layout_width="fill_parent" n1:layout_height="4.0dip" n1:maxHeight="4.0dip" n1:progressDrawable="@drawable/lb_playback_progress_bar" n1:minHeight="4.0dip" n1:layoutDirection="ltr" style="?android:progressBarStyleHorizontal" />
+    <FrameLayout n1:id="@id/controls_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <android.support.v17.leanback.widget.ControlBar n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/control_bar" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layoutDirection="ltr" />
+        <FrameLayout n1:layout_gravity="end" n1:id="@id/more_actions_dock" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <TextView n1:layout_gravity="center|left|top" n1:id="@id/current_time" n1:paddingTop="@dimen/lb_playback_time_padding_top" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginStart="@dimen/lb_playback_current_time_margin_start" style="?playbackControlsTimeStyle" />
+        <TextView n1:layout_gravity="center|right|top" n1:id="@id/total_time" n1:paddingTop="@dimen/lb_playback_time_padding_top" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginEnd="@dimen/lb_playback_total_time_margin_end" style="?playbackControlsTimeStyle" />
+    </FrameLayout>
+</LinearLayout>

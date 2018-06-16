@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v17.leanback.widget.ResizingTextView n1:id="@id/lb_details_description_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?detailsDescriptionTitleStyle" />
+    <TextView n1:id="@id/lb_details_description_subtitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?detailsDescriptionSubtitleStyle" />
+    <TextView n1:id="@id/lb_details_description_body" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?detailsDescriptionBodyStyle" />
+</LinearLayout>

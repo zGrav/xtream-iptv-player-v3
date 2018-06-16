@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet>
+    <fade n1:interpolator="@android:interpolator/fast_out_linear_in" n1:duration="@integer/lb_guidedstep_activity_background_fade_duration_ms"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <targets>
+            <target n1:targetId="@id/guidedstep_background" />
+        </targets>
+    </fade>
+    <slide n2:interpolator="@android:interpolator/fast_out_linear_in" n2:duration="350" n2:slideEdge="@integer/slideEdgeStart"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <targets>
+            <target n2:targetId="@id/guidance_icon" />
+            <target n2:targetId="@id/guidance_title" />
+            <target n2:targetId="@id/guidance_breadcrumb" />
+            <target n2:targetId="@id/guidance_description" />
+        </targets>
+    </slide>
+    <slide n3:interpolator="@android:interpolator/fast_out_linear_in" n3:duration="350" n3:slideEdge="@integer/slideEdgeEnd"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <targets>
+            <target n3:targetId="@id/action_fragment_background" />
+            <target n3:targetId="@id/guidedactions_list_background" />
+            <target n3:targetId="@id/guidedactions_content" />
+            <target n3:targetId="@id/guidedactions_list" />
+            <target n3:targetId="@id/guidedactions_sub_list" />
+            <target n3:targetId="@id/guidedactions_sub_list_background" />
+            <target n3:targetId="@id/guidedactions_list_background2" />
+            <target n3:targetId="@id/guidedactions_content2" />
+            <target n3:targetId="@id/guidedactions_list2" />
+        </targets>
+    </slide>
+</transitionSet>

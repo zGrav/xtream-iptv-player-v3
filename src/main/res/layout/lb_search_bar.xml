@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <android.support.v17.leanback.widget.SpeechOrbView n1:id="@id/lb_search_bar_speech_orb" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" n1:layout_marginStart="@dimen/lb_search_bar_speech_orb_margin_start"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <requestFocus />
+    </android.support.v17.leanback.widget.SpeechOrbView>
+    <RelativeLayout n2:id="@id/lb_search_bar_items" n2:background="@drawable/lb_in_app_search_bg" n2:layout_width="@dimen/lb_search_bar_items_width" n2:layout_height="@dimen/lb_search_bar_items_height" n2:layout_marginTop="@dimen/lb_search_bar_inner_margin_top" n2:layout_marginBottom="@dimen/lb_search_bar_inner_margin_bottom" n2:layout_centerVertical="true" n2:layout_marginStart="@dimen/lb_search_bar_items_margin_start" n2:layout_toEndOf="@id/lb_search_bar_speech_orb"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <ImageView n2:layout_gravity="start|center" n2:id="@id/lb_search_bar_badge" n2:visibility="gone" n2:layout_width="@dimen/lb_search_bar_icon_width" n2:layout_height="@dimen/lb_search_bar_icon_height" n2:src="@null" n2:layout_centerVertical="true" n2:layout_marginStart="@dimen/lb_search_bar_icon_margin_start" style="?browseTitleIconStyle" />
+        <android.support.v17.leanback.widget.SearchEditText n2:textSize="@dimen/lb_search_bar_text_size" n2:textColor="@color/lb_search_bar_text" n2:textColorHint="@color/lb_search_bar_hint" n2:layout_gravity="start|center" n2:id="@id/lb_search_text_editor" n2:background="@null" n2:focusable="true" n2:focusableInTouchMode="true" n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:hint="@string/lb_search_bar_hint" n2:cursorVisible="true" n2:singleLine="true" n2:editable="true" n2:layout_centerVertical="true" n2:inputType="textAutoComplete" n2:imeOptions="actionSearch|flagNoExtractUi" n2:textCursorDrawable="@null" n2:fontFamily="sans-serif" n2:textAlignment="viewStart" n2:layout_marginStart="@dimen/lb_search_bar_edit_text_margin_start" n2:layout_toEndOf="@id/lb_search_bar_badge" />
+    </RelativeLayout>
+</merge>

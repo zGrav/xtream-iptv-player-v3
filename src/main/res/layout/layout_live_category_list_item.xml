@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/rl_category1" n1:background="@drawable/selector_checkbox" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/rl_category" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip">
+        <TextView n1:textSize="15.0dip" n1:textColor="@color/black" n1:id="@id/tv_category_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="15.0dip" n1:text="INDIA" n1:layout_centerVertical="true" n1:fontFamily="@string/font_family_regular" />
+        <ImageView n1:id="@id/iv_lock_staus" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:src="@drawable/lock_open" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>><ImageView n1:id="@id/iv_divider" n1:background="@color/service_status_terminated" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="10.0dip" n1:layout_below="@id/rl_category" />
+</RelativeLayout>

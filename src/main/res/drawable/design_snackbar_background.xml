@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape n1:shape="rectangle"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <corners n1:radius="@dimen/design_snackbar_background_corner_radius" />
+    <solid n1:color="@color/design_snackbar_background_color" />
+</shape>

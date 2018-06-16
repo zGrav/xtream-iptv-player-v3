@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/notification_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:layout_width="@dimen/notification_large_icon_width" n1:layout_height="@dimen/notification_large_icon_height" layout="@layout/notification_template_icon_group" />
+    <LinearLayout n1:layout_gravity="top" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginStart="@dimen/notification_large_icon_width">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/notification_main_column_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/notification_large_icon_height">
+            <FrameLayout n1:id="@id/notification_main_column" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="8.0dip" n1:layout_weight="1.0" n1:layout_marginEnd="8.0dip" />
+            <FrameLayout n1:id="@id/right_side" n1:paddingTop="@dimen/notification_right_side_padding_top" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginEnd="8.0dip">
+                <ViewStub n1:layout_gravity="end|center|top" n1:id="@id/time" n1:visibility="gone" n1:layout="@layout/notification_template_part_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                <ViewStub n1:layout_gravity="end|center|top" n1:id="@id/chronometer" n1:visibility="gone" n1:layout="@layout/notification_template_part_chronometer" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                <TextView n1:textAppearance="@style/TextAppearance.Compat.Notification.Info" n1:layout_gravity="end|bottom|center" n1:id="@id/info" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView n1:id="@id/action_divider" n1:background="#29000000" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/actions" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginStart="-8.0dip" />
+    </LinearLayout>
+</FrameLayout>

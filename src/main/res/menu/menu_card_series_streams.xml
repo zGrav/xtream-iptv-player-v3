@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item n1:icon="@drawable/play" n1:id="@id/nav_play" n1:visible="false" n1:title="@string/nav_play"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:icon="@drawable/att_to_fav" n2:id="@id/nav_add_to_fav" n2:visible="false" n2:title="@string/add_to_favourite"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:icon="@drawable/att_to_fav" n3:id="@id/nav_remove_from_fav" n3:visible="false" n3:title="@string/remove_from_favourite"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</menu>

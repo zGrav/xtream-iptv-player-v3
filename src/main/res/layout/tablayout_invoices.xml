@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:gravity="center" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="13.0dip" n1:textColor="@color/black" n1:id="@id/tv_tab_service_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Active" n1:layout_centerInParent="true" n1:fontFamily="@string/font_family_regular" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton n1:gravity="center" n1:id="@id/action0" n1:layout_width="48.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="2.0dip" n1:layout_marginRight="2.0dip" n1:layout_weight="1.0" style="?android:borderlessButtonStyle"
+  xmlns:n1="http://schemas.android.com/apk/res/android" />

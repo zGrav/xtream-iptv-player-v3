@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout n1:orientation="vertical" n1:id="@id/action_bar_root" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.ViewStubCompat n1:id="@id/action_mode_bar_stub" n1:layout="@layout/abc_action_mode_bar" n1:inflatedId="@id/action_mode_bar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <include layout="@layout/abc_screen_content_include" />
+</android.support.v7.widget.FitWindowsLinearLayout>

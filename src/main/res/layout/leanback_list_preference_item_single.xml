@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:id="@id/container" n1:background="?android:selectableItemBackground" n1:focusable="true" n1:clickable="true" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:paddingStart="@dimen/lb_preference_item_padding_start" n1:paddingEnd="@dimen/lb_preference_item_padding_end"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RadioButton n1:layout_gravity="center_vertical" n1:id="@id/button" n1:focusable="false" n1:clickable="false" n1:layout_width="@dimen/lb_preference_item_icon_size" n1:layout_height="@dimen/lb_preference_item_icon_size" n1:layout_marginEnd="@dimen/lb_preference_item_icon_margin_end" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <Space n1:layout_width="0.0dip" n1:layout_height="@dimen/lb_preference_item_text_space_top" />
+        <TextView n1:textSize="@dimen/lb_preference_item_primary_text_size" n1:textColor="@color/lb_preference_item_primary_text_color" n1:id="@android:id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/lb_preference_item_primary_text_margin_bottom" n1:fontFamily="sans-serif-condensed" />
+        <Space n1:layout_width="0.0dip" n1:layout_height="@dimen/lb_preference_item_text_space_bottom" />
+    </LinearLayout>
+</LinearLayout>

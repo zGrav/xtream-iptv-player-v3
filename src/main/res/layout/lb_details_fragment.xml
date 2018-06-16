@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v17.leanback.widget.BrowseFrameLayout n1:id="@id/dummy" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/video_surface_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <android.support.v17.leanback.widget.NonOverlappingFrameLayout n1:id="@id/details_background_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <FrameLayout n1:id="@id/details_fragment_root" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <FrameLayout n1:id="@id/details_rows_dock" n1:layout_width="wrap_content" n1:layout_height="fill_parent" />
+    </FrameLayout>
+</android.support.v17.leanback.widget.BrowseFrameLayout>

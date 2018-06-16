@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@android:color/black" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <VideoView n1:id="@id/videoView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    <ProgressBar n1:id="@id/pb_loader" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:indeterminate="true" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    <z.xtreamiptv.playerv3.view.utility.LoadingSpinner n1:id="@id/iv_video_loader" n1:visibility="visible" n1:layout_width="100.0dip" n1:layout_height="100.0dip" n1:layout_centerInParent="true" />
+    <Button n1:id="@id/retry_button" n1:background="@drawable/player_retry" n1:visibility="gone" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_centerInParent="true" />
+</RelativeLayout>

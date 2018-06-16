@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list n1:oneshot="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_00_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_01_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_02_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_03_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_04_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_05_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_06_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_07_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_08_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_09_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_10_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_11_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_12_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_13_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_14_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_15_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_16_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_17_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_18_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_19_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_20_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_21_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_22_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_23_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_24_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_25_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_26_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_27_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_28_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_29_light" />
+    <item n1:duration="42" n1:drawable="@drawable/ic_mr_button_connected_30_light" />
+</animation-list>

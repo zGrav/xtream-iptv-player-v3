@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/ll_main_layout" n1:tag="cards main container" n1:background="@drawable/selector_checkbox" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/rl_archive_layout" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="5.0dip">
+        <TextView n1:textSize="20.0dip" n1:textStyle="bold" n1:layout_gravity="left" n1:id="@id/tv_channel_name" n1:paddingTop="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="6.0dip" n1:text="This is program name" />
+        <ImageView n1:id="@id/iv_archive_clock" n1:layout_width="17.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="18.0dip" n1:layout_marginTop="2.0dip" n1:src="@drawable/tv_arch" n1:layout_below="@id/tv_channel_name" />
+        <TextView n1:textSize="17.0dip" n1:layout_gravity="left" n1:id="@id/tv_date_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="2.0dip" n1:text="20:10 - 30:30" n1:layout_below="@id/tv_channel_name" n1:layout_alignLeft="@id/iv_archive_clock" />
+        <TextView n1:textSize="13.0dip" n1:textStyle="bold" n1:textColor="#ff08b461" n1:id="@id/tv_now_playing" n1:paddingTop="10.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" />
+        <View n1:background="#792d2a2a" n1:layout_width="fill_parent" n1:layout_height="0.100000024dip" />
+    </RelativeLayout>
+</LinearLayout>

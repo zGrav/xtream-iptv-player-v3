@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/initial" style="?playbackMediaItemNumberStyle" />
+    <ImageView n1:layout_gravity="center_vertical" n1:id="@id/paused" n1:visibility="gone" n1:layout_width="@dimen/lb_playback_play_icon_size" n1:layout_height="@dimen/lb_playback_play_icon_size" n1:src="@drawable/lb_ic_play_fit" n1:scaleType="fitStart" n1:adjustViewBounds="true" />
+    <android.support.v17.leanback.widget.MediaNowPlayingView n1:layout_gravity="center_vertical" n1:id="@id/playing" n1:visibility="gone" n1:layout_width="@dimen/lb_playback_now_playing_view_size" n1:layout_height="@dimen/lb_playback_now_playing_view_size" />
+</merge>

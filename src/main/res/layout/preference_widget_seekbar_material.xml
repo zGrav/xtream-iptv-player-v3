@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="?android:listPreferredItemHeight" n1:paddingEnd="?android:scrollbarSize"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center" n1:id="@android:id/icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="@dimen/preference_icon_minWidth" />
+    <RelativeLayout n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="6.0dip" n1:layout_marginBottom="6.0dip" n1:layout_weight="1.0" n1:layout_marginStart="16.0dip" n1:layout_marginEnd="8.0dip">
+        <TextView n1:textAppearance="@style/Preference_TextAppearanceMaterialSubhead" n1:ellipsize="marquee" n1:id="@android:id/title" n1:fadingEdge="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" />
+        <TextView n1:textAppearance="?android:textAppearanceSmall" n1:textColor="?android:textColorSecondary" n1:id="@android:id/summary" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="4" n1:layout_below="@android:id/title" n1:layout_alignStart="@android:id/title" />
+        <android.support.v7.preference.UnPressableLinearLayout n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@android:id/summary" n1:layout_alignStart="@android:id/title">
+            <SeekBar n1:id="@id/seekbar" n1:background="@null" n1:focusable="false" n1:clickable="false" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" n1:paddingStart="@dimen/preference_seekbar_padding_start" n1:paddingEnd="@dimen/preference_seekbar_padding_end" />
+            <TextView n1:textAppearance="@style/Preference_TextAppearanceMaterialSubhead" n1:ellipsize="marquee" n1:gravity="center|right" n1:id="@id/seekbar_value" n1:fadingEdge="horizontal" n1:layout_width="@dimen/preference_seekbar_value_width" n1:layout_height="fill_parent" n1:singleLine="true" n1:fontFamily="sans-serif-condensed" />
+        </android.support.v7.preference.UnPressableLinearLayout>
+    </RelativeLayout>
+</LinearLayout>

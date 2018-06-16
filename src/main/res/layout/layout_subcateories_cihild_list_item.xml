@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="horizontal" n1:id="@id/rl_movie" n1:background="@drawable/selector_vod_layout" n1:paddingLeft="4.0dip" n1:paddingTop="4.0dip" n1:paddingRight="4.0dip" n1:paddingBottom="4.0dip" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="200.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/card_view" n1:focusable="true" n1:clickable="true" n1:layout_width="140.0dip" n1:layout_height="fill_parent">
+        <RelativeLayout n1:id="@id/rl_movie_poster" n1:layout_width="wrap_content" n1:layout_height="200.0dip">
+            <ImageView n1:id="@id/iv_movie_image" n1:background="@drawable/noposter" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="fitXY" />
+            <ImageView n1:id="@id/iv_favourite" n1:background="@drawable/selector_favourite_vod" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="1.0dip" n1:src="@drawable/favourite_yellow" n1:layout_alignParentRight="true" />
+            <TextView n1:textSize="12.0dip" n1:textColor="@color/white" n1:ellipsize="marquee" n1:gravity="center" n1:layout_gravity="center_vertical" n1:id="@id/tv_movie_name1" n1:background="#90000000" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="0.0dip" n1:layout_marginRight="0.0dip" n1:text="@string/loading" n1:layout_alignParentBottom="true" n1:layout_centerVertical="true" n1:paddingStart="5.0dip" />
+        </RelativeLayout>
+        <RelativeLayout n1:layout_gravity="bottom" n1:id="@id/rl_movie_bottom" n1:background="#ffffffff" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="60.0dip" n1:layout_below="@id/rl_movie_poster">
+            <RelativeLayout n1:id="@id/relative_layout_loading" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_alignParentBottom="true">
+                <TextView n1:textSize="11.0dip" n1:textColor="@color/black" n1:ellipsize="marquee" n1:gravity="center" n1:layout_gravity="center_vertical" n1:id="@id/tv_movie_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="0.0dip" n1:layout_marginRight="0.0dip" n1:text="@string/loading" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout n1:id="@id/ll_menu" n1:layout_width="wrap_content" n1:layout_height="60.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+                <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textSize="25.0dip" n1:gravity="center_vertical" n1:id="@id/tv_streamOptions" n1:background="@drawable/selector_menu" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="⋮" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

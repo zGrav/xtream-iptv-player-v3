@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/splash_bg" n1:scaleType="centerCrop" />
+    <ImageView n1:id="@id/iv_splash_image" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="70.0dip" n1:src="@drawable/logo" n1:layout_centerInParent="true" n1:layout_centerHorizontal="true" />
+</RelativeLayout>

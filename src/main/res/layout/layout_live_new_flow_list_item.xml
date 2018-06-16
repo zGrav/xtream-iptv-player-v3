@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/rl_outer" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/testing" n1:paddingLeft="15.0dip" n1:paddingTop="10.0dip" n1:paddingRight="15.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RelativeLayout n1:id="@id/rl_list_of_categories" n1:background="@drawable/selector_list_categories" n1:focusable="true" n1:focusableInTouchMode="false" n1:layout_width="fill_parent" n1:layout_height="70.0dip">
+            <ImageView n1:id="@id/iv_tv_icon" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginLeft="10.0dip" n1:src="@drawable/tv_icon" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="15.0dip" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/tv_movie_category_name" n1:layout_width="fill_parent" n1:layout_height="60.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="95.0dip" n1:layout_toRightOf="@id/iv_tv_icon" n1:layout_centerVertical="true" n1:fontFamily="@string/font_family_regular" />
+            <ImageView n1:id="@id/iv_foraward_arrow" n1:layout_width="wrap_content" n1:layout_height="20.0dip" n1:layout_marginRight="20.0dip" n1:src="@drawable/forward_arrow" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            <TextView n1:textColor="@color/white" n1:id="@id/tv_sub_cat_count" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="60.0dip" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <ProgressBar n1:id="@id/pb_paging_loader" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="30.0dip" n1:layout_alignParentBottom="true" n1:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+    </RelativeLayout>
+</RelativeLayout>

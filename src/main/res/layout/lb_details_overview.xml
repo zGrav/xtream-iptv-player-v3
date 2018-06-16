@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:paddingBottom="@dimen/lb_details_overview_margin_bottom" n1:focusable="true" n1:focusableInTouchMode="true" n1:clipToPadding="false" n1:descendantFocusability="afterDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:paddingStart="@dimen/lb_details_overview_margin_start" n1:paddingEnd="@dimen/lb_details_overview_margin_end"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/details_frame" n1:layout_width="fill_parent" n1:layout_height="@dimen/lb_details_overview_height_large" n1:foreground="#ffffffff">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/details_overview" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/details_overview_image" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:scaleType="fitStart" n1:adjustViewBounds="true" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/details_overview_right_panel" n1:paddingBottom="@dimen/lb_details_overview_description_margin_bottom" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <android.support.v17.leanback.widget.NonOverlappingFrameLayout n1:gravity="top" n1:id="@id/details_overview_description" n1:paddingTop="@dimen/lb_details_overview_description_margin_top" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" n1:layout_marginStart="@dimen/lb_details_overview_description_margin_start" n1:layout_marginEnd="@dimen/lb_details_overview_description_margin_end" />
+                <android.support.v17.leanback.widget.HorizontalGridView n1:gravity="center" n1:id="@id/details_overview_actions" n1:focusable="true" n1:focusableInTouchMode="true" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:horizontalSpacing="@dimen/lb_details_overview_action_items_spacing" n1:paddingStart="@dimen/lb_details_overview_description_margin_start" n1:paddingEnd="@dimen/lb_details_overview_description_margin_end" n2:rowHeight="@dimen/lb_details_overview_actions_height" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

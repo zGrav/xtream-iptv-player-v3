@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="img_id_arr">
+        <item>@drawable/lb_text_dot_one</item>
+        <item>@drawable/lb_text_dot_one_small</item>
+    </array>
+    <string-array name="priority">
+        <item>Médio</item>
+        <item>Alto</item>
+        <item>Baixo</item>
+    </string-array>
+</resources>

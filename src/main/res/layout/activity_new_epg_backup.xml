@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/background_material_dark" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <ImageView n1:id="@id/program_image" n1:background="@color/background_material_dark" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/launcher_logo" n1:scaleType="matrix" n1:contentDescription="PROGRAM Image" n1:alpha="0.25" />
+        <TextView n1:textSize="30.0sp" n1:textColor="@color/background_material_light" n1:id="@id/current_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="100.0dip" n1:text="TIME" n1:layout_alignParentTop="true" n1:layout_marginEnd="200.0dip" n1:layout_alignParentEnd="true" />
+        <TextView n1:textSize="30.0sp" n1:textColor="@color/background_material_light" n1:id="@id/current_event" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="100.0dip" n1:text="PROGRAM Title" n1:layout_alignParentTop="true" n1:layout_marginStart="200.0dip" n1:layout_alignParentStart="true" />
+        <TextView n1:textSize="18.0sp" n1:textColor="@color/background_material_light" n1:id="@id/current_event_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="100.0dip" n1:text="PROGRAM TITLE" n1:layout_alignParentTop="true" n1:layout_marginStart="200.0dip" n1:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <z.xtreamiptv.playerv3.view.utility.epg.EPG n1:id="@id/epg" n1:background="@color/epg_background" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="2.0" />
+</LinearLayout>

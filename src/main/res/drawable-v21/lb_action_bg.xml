@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple n1:color="?android:colorControlHighlight"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:id="@android:id/mask">
+        <shape n1:shape="rectangle">
+            <corners n1:radius="@dimen/lb_action_button_corner_radius" />
+            <solid n1:color="?android:colorButtonNormal" />
+        </shape>
+    </item>
+</ripple>

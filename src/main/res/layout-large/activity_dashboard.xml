@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/activity_dashboard" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.DrawerLayout n1:id="@id/drawer_layout" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout n1:id="@id/appbar_toolbar" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:paddingTop="10.0dip" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="90.0dip" n1:minHeight="?actionBarSize" n1:layout_centerInParent="true" n2:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/tv_header_title" n1:paddingRight="15.0dip" n1:layout_width="2000.0dip" n1:layout_height="80.0dip" n1:layout_marginTop="5.0dip" n1:layout_marginBottom="5.0dip" n1:src="@drawable/logo_home" n1:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+            <ImageView n1:id="@id/tv_divider" n1:background="@color/colorPrimary" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_below="@id/appbar_toolbar" />
+            <RelativeLayout n1:id="@id/rl_import_process" n1:background="@color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/tv_divider">
+                <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textSize="16.0dip" n1:textStyle="bold" n1:id="@id/tv_importing_streams" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_centerHorizontal="true" n1:layout_marginStart="30.0dip" />
+                <me.zhanghai.android.materialprogressbar.MaterialProgressBar n1:id="@id/new_progressBar" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="20.0dip" n1:indeterminate="true" n1:layout_below="@id/tv_importing_streams" n1:layout_centerHorizontal="true" n1:layout_marginStart="60.0dip" n3:mpb_progressStyle="horizontal" style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <ProgressBar n1:id="@id/progressBar" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/tv_importing_streams" n1:layout_centerHorizontal="true" n1:layout_marginStart="60.0dip" style="?android:progressBarStyleHorizontal" />
+                <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textSize="14.0dip" n1:id="@id/tv_percentage" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="20.0dip" n1:layout_below="@id/progressBar" n1:layout_marginStart="30.0dip" n1:layout_alignParentStart="true" />
+                <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textSize="14.0dip" n1:id="@id/tv_countings" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="20.0dip" n1:layout_below="@id/progressBar" n1:layout_marginEnd="30.0dip" n1:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <ScrollView n1:id="@id/sv_scroll_view" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                <RelativeLayout n1:id="@id/rl_dashboard" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <RelativeLayout n1:id="@id/rl_livetv" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+                        <RelativeLayout n1:id="@id/live_tv" n1:background="@drawable/selector_livetv" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="100.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="10.0dip" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+                            <ImageView n1:id="@id/iv_livetv_icon" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginLeft="15.0dip" n1:src="@drawable/livetv_icon" n1:layout_alignParentLeft="true" n1:layout_centerInParent="true" n1:layout_alignParentStart="true" />
+                            <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_toRightOf="@id/iv_livetv_icon" n1:layout_centerVertical="true">
+                                <TextView n1:textSize="22.0dip" n1:textColor="@color/white" n1:id="@id/tv_livetv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/live_tv" n1:fontFamily="sans-serif-regular" />
+                                <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_live_count" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/total" n1:layout_below="@id/tv_livetv" n1:fontFamily="sans-serif-regular" />
+                            </RelativeLayout>
+                            <ImageView n1:id="@id/iv_livetv_forward_arrow" n1:layout_width="20.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:src="@drawable/forward_arrow" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout n1:id="@id/rl_view_epg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/rl_livetv">
+                        <RelativeLayout n1:id="@id/detail_view_epg" n1:background="@drawable/selector_tv_guide" n1:padding="0.0dip" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="100.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="10.0dip">
+                            <ImageView n1:id="@id/iv_view_epg_icon" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginLeft="15.0dip" n1:src="@drawable/guide_icon" n1:layout_alignParentLeft="true" n1:layout_centerInParent="true" n1:layout_alignParentStart="true" />
+                            <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_toRightOf="@id/iv_view_epg_icon" n1:layout_centerVertical="true">
+                                <TextView n1:textSize="22.0dip" n1:textColor="@color/white" n1:id="@id/tv_view_epg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/tv_guide" n1:fontFamily="sans-serif-regular" />
+                                <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_epg_count" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/total" n1:layout_below="@id/tv_view_epg" n1:fontFamily="sans-serif-regular" />
+                            </RelativeLayout>
+                            <ImageView n1:id="@id/iv_view_epg_forward_arrow" n1:layout_width="20.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:src="@drawable/forward_arrow" n1:layout_alignParentRight="true" n1:layout_centerInParent="true" n1:layout_marginEnd="20.0dip" n1:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout n1:id="@id/rl_vod" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/rl_view_epg">
+                        <RelativeLayout n1:id="@id/detail_vod" n1:background="@drawable/selector_vod" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="100.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="10.0dip">
+                            <ImageView n1:id="@id/iv_vod_icon" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginLeft="15.0dip" n1:src="@drawable/vod_icon" n1:layout_alignParentLeft="true" n1:layout_centerInParent="true" n1:layout_alignParentStart="true" />
+                            <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_toRightOf="@id/iv_vod_icon" n1:layout_centerVertical="true">
+                                <TextView n1:textSize="22.0dip" n1:textColor="@color/white" n1:id="@id/tv_vod" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/vod" n1:fontFamily="sans-serif-regular" />
+                                <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_vod_count" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/total" n1:layout_below="@id/tv_vod" n1:fontFamily="sans-serif-regular" />
+                            </RelativeLayout>
+                            <ImageView n1:id="@id/iv_vod_forward_arrow" n1:layout_width="20.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:src="@drawable/forward_arrow" n1:layout_alignParentRight="true" n1:layout_centerInParent="true" n1:layout_marginEnd="20.0dip" n1:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout n1:id="@id/rl_tv_archive" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/rl_vod">
+                        <RelativeLayout n1:id="@id/detail_tv_archive" n1:background="@drawable/selector_tv_archive" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="100.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="10.0dip">
+                            <ImageView n1:id="@id/iv_archive_icon" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginLeft="15.0dip" n1:src="@drawable/tv_archive" n1:layout_alignParentLeft="true" n1:layout_centerInParent="true" n1:layout_alignParentStart="true" />
+                            <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_toRightOf="@id/iv_archive_icon" n1:layout_centerVertical="true">
+                                <TextView n1:textSize="22.0dip" n1:textColor="@color/white" n1:id="@id/tv_archive" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/tv_archive" n1:fontFamily="sans-serif-regular" />
+                                <TextView n1:textSize="12.0dip" n1:textColor="@color/white" n1:id="@id/tv_archive_detail" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/setting_etc" n1:layout_below="@id/tv_archive" n1:fontFamily="sans-serif-regular" />
+                            </RelativeLayout>
+                            <ImageView n1:id="@id/iv_archive_forward_arrow" n1:layout_width="20.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:src="@drawable/forward_arrow" n1:layout_alignParentRight="true" n1:layout_centerInParent="true" n1:layout_marginEnd="20.0dip" n1:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout n1:id="@id/rl_settings" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/rl_tv_archive">
+                        <RelativeLayout n1:id="@id/detail_settings" n1:background="@drawable/selector_setting" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="100.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="10.0dip">
+                            <ImageView n1:id="@id/iv_settings_icon" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginLeft="15.0dip" n1:src="@drawable/settings_icon" n1:layout_alignParentLeft="true" n1:layout_centerInParent="true" n1:layout_alignParentStart="true" />
+                            <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_toRightOf="@id/iv_settings_icon" n1:layout_centerVertical="true">
+                                <TextView n1:textSize="22.0dip" n1:textColor="@color/white" n1:id="@id/tv_settings" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/settings" n1:fontFamily="sans-serif-regular" />
+                                <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_settings_etc" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/setting_etc" n1:layout_below="@id/tv_settings" n1:fontFamily="sans-serif-regular" />
+                            </RelativeLayout>
+                            <ImageView n1:id="@id/iv_settings_forward_arrow" n1:layout_width="20.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:src="@drawable/forward_arrow" n1:layout_alignParentRight="true" n1:layout_centerInParent="true" n1:layout_marginEnd="20.0dip" n1:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout n1:id="@id/rl_account_info" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/rl_settings">
+                        <RelativeLayout n1:id="@id/account_info" n1:background="@drawable/selector_account_info" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="100.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="10.0dip">
+                            <ImageView n1:id="@id/iv_account_info" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginLeft="15.0dip" n1:src="@drawable/account_info" n1:layout_alignParentLeft="true" n1:layout_centerInParent="true" n1:layout_alignParentStart="true" />
+                            <TextView n1:textSize="22.0dip" n1:textColor="@color/white" n1:id="@id/tv_account_info" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:text="@string/account_info" n1:layout_toRightOf="@id/iv_account_info" n1:layout_centerInParent="true" n1:fontFamily="sans-serif-regular" />
+                            <ImageView n1:id="@id/iv_live_tv_forward_arrow" n1:layout_width="20.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:src="@drawable/forward_arrow" n1:layout_alignParentRight="true" n1:layout_centerInParent="true" n1:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+            <include n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/app_bar_drawer" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.design.widget.NavigationView n1:layout_gravity="start" n1:id="@id/nav_view" n1:fitsSystemWindows="true" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n4:headerLayout="@layout/nav_header_drawer" n4:itemBackground="@layout/nav_view_item_background" n4:menu="@menu/menu_dashboard" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

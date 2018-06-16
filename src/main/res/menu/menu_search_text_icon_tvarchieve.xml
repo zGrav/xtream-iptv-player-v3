@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item n1:icon="@drawable/search_view" n1:id="@id/action_search" n1:title="@string/search" n2:actionViewClass="android.support.v7.widget.SearchView" n2:showAsAction="collapseActionView|ifRoom"
+      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <item n3:icon="@drawable/menu_dots" n3:id="@id/empty" n3:orderInCategory="101" n3:title="inner" n4:showAsAction="always"
+      xmlns:n3="http://schemas.android.com/apk/res/android" xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <menu>
+            <item n3:icon="@drawable/logout_icon_menu" n3:id="@id/action_logout1" n3:orderInCategory="100" n3:title="@string/menu_logout" />
+            <item n3:icon="@drawable/listview_menu" n3:id="@id/layout_view_linear" n3:visible="true" n3:title="@string/view_Linear" />
+            <item n3:icon="@drawable/gridview_menu" n3:id="@id/layout_view_grid" n3:visible="true" n3:title="@string/view_grid" />
+            <item n3:icon="@drawable/livetv_icon_menu" n3:id="@id/menu_load_channels_vod1" n3:title="@string/load_channels_vod_series" />
+            <item n3:icon="@drawable/guide_icon_menu" n3:id="@id/menu_load_tv_guide1" n3:title="@string/load_tv_guide" />
+            <item n3:icon="@drawable/ic_menu_send" n3:id="@id/menu_sort" n3:visible="false" n3:title="SORT" />
+        </menu>
+    </item>
+</menu>

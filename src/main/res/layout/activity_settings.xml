@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.DrawerLayout n1:id="@id/drawer_layout" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout n1:id="@id/appbar_toolbar" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:paddingTop="10.0dip" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="90.0dip" n1:minHeight="?actionBarSize" n1:layout_centerInParent="true" n2:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/tv_header_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:layout_marginBottom="5.0dip" n1:src="@drawable/logo_home" n1:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+            <RelativeLayout n1:id="@id/rl_settings" n1:background="@color/colorAccent" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_settings" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:layout_marginBottom="12.0dip" n1:text="@string/settings" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_bold" />
+            </RelativeLayout>
+            <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+
+                <RelativeLayout
+                    n1:id="@+id/rl_setting_parental"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent">
+
+                    <RelativeLayout
+                        n1:id="@id/rl_player"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:background="@drawable/selector_checkbox"
+                        n1:focusable="true"
+                        n1:nextFocusDown="@id/rl_parental"
+                        n1:paddingTop="5.0dip">
+
+                        <TextView
+                            n1:id="@id/tv_player_selection"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginBottom="10.0dip"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:background="@drawable/selector_parental_setting"
+                            n1:drawableLeft="@drawable/player_selection_icon"
+                            n1:drawablePadding="30.0dip"
+                            n1:fontFamily="@string/font_family_regular"
+                            n1:text="@string/player_setting"
+                            n1:textColor="@color/cart_list_item_color"
+                            n1:textSize="18.0dip" />
+
+                        <ImageView
+                            n1:id="@id/iv_vod_forward_arrow"
+                            n1:layout_width="20.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:layout_alignParentEnd="true"
+                            n1:layout_alignParentRight="true"
+                            n1:layout_alignParentTop="true"
+                            n1:layout_centerInParent="true"
+                            n1:layout_marginBottom="10.0dip"
+                            n1:layout_marginEnd="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:src="@drawable/arrow_f" />>
+
+                        <ImageView
+                            n1:id="@id/iv_divider"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="1.0px"
+                            n1:layout_below="@id/tv_player_selection"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="5.0dip"
+                            n1:background="@color/service_status_terminated" />>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        n1:id="@id/rl_parental"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_below="@id/rl_player"
+                        n1:background="@drawable/selector_checkbox"
+                        n1:focusable="true"
+                        n1:nextFocusUp="@id/rl_player"
+                        n1:paddingTop="5.0dip">
+
+                        <TextView
+                            n1:id="@id/tv_parental_control"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginBottom="10.0dip"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:background="@drawable/selector_parental_setting"
+                            n1:drawableLeft="@drawable/parental_control_icon"
+                            n1:drawablePadding="30.0dip"
+                            n1:fontFamily="@string/font_family_regular"
+                            n1:text="@string/parental_contol"
+                            n1:textColor="@color/cart_list_item_color"
+                            n1:textSize="18.0dip" />
+
+                        <ImageView
+                            n1:id="@id/iv_vod_forward_arrow2"
+                            n1:layout_width="20.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:layout_alignParentEnd="true"
+                            n1:layout_alignParentRight="true"
+                            n1:layout_marginEnd="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:src="@drawable/arrow_f" />>
+
+                        <ImageView
+                            n1:id="@id/iv_divider1"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="1.0px"
+                            n1:layout_below="@id/tv_parental_control"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="5.0dip"
+                            n1:background="@color/service_status_terminated" />>
+                    </RelativeLayout>
+                    >
+
+                    <RelativeLayout
+                        n1:id="@id/rl_epg_shift"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_below="@id/rl_parental"
+                        n1:background="@drawable/selector_checkbox"
+                        n1:focusable="true"
+                        n1:nextFocusUp="@id/rl_parental"
+                        n1:paddingTop="5.0dip"
+                        n1:visibility="visible">
+
+                        <TextView
+                            n1:id="@id/tv_epg_time_shift"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginBottom="10.0dip"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:background="@drawable/selector_parental_setting"
+                            n1:drawableLeft="@drawable/epg_selection_icon"
+                            n1:drawablePadding="30.0dip"
+                            n1:fontFamily="@string/font_family_regular"
+                            n1:text="@string/tv_guide_epg_time_shift"
+                            n1:textColor="@color/cart_list_item_color"
+                            n1:textSize="18.0dip" />
+
+                        <ImageView
+                            n1:id="@id/iv_epg_forward_arrow2"
+                            n1:layout_width="20.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:layout_alignParentEnd="true"
+                            n1:layout_alignParentRight="true"
+                            n1:layout_marginEnd="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:src="@drawable/arrow_f" />>
+
+                        <ImageView
+                            n1:id="@id/iv_divider2"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="1.0px"
+                            n1:layout_below="@id/tv_epg_time_shift"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="5.0dip"
+                            n1:background="@color/service_status_terminated" />>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        n1:id="@id/rl_stream_format"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_below="@id/rl_epg_shift"
+                        n1:background="@drawable/selector_checkbox"
+                        n1:focusable="true"
+                        n1:nextFocusUp="@id/rl_epg_shift"
+                        n1:paddingTop="5.0dip"
+                        n1:visibility="visible">
+
+                        <TextView
+                            n1:id="@id/tv_stream_format"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginBottom="10.0dip"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:background="@drawable/selector_parental_setting"
+                            n1:drawableLeft="@drawable/stream_format"
+                            n1:drawablePadding="30.0dip"
+                            n1:fontFamily="@string/font_family_regular"
+                            n1:text="@string/stream_format"
+                            n1:textColor="@color/cart_list_item_color"
+                            n1:textSize="18.0dip" />
+
+                        <ImageView
+                            n1:id="@id/iv_stream_format_forward_arrow2"
+                            n1:layout_width="20.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:layout_alignParentEnd="true"
+                            n1:layout_alignParentRight="true"
+                            n1:layout_marginEnd="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:src="@drawable/arrow_f" />
+
+                        <ImageView
+                            n1:id="@id/iv_divider3"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="1.0px"
+                            n1:layout_below="@id/tv_stream_format"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="5.0dip"
+                            n1:background="@color/service_status_terminated" />>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        n1:id="@id/rl_time_format"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_below="@id/rl_stream_format"
+                        n1:background="@drawable/selector_checkbox"
+                        n1:focusable="true"
+                        n1:nextFocusUp="@id/rl_stream_format"
+                        n1:paddingTop="5.0dip"
+                        n1:visibility="visible">
+
+                        <TextView
+                            n1:id="@id/tv_time_format"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginBottom="10.0dip"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:background="@drawable/selector_parental_setting"
+                            n1:drawableLeft="@drawable/time_24hr"
+                            n1:drawablePadding="30.0dip"
+                            n1:fontFamily="@string/font_family_regular"
+                            n1:text="@string/time_format"
+                            n1:textColor="@color/cart_list_item_color"
+                            n1:textSize="18.0dip" />
+
+                        <ImageView
+                            n1:id="@id/iv_time_format_forward_arrow2"
+                            n1:layout_width="20.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:layout_alignParentEnd="true"
+                            n1:layout_alignParentRight="true"
+                            n1:layout_marginEnd="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:src="@drawable/arrow_f" />
+
+                        <ImageView
+                            n1:id="@id/iv_divider4"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="1.0px"
+                            n1:layout_below="@id/tv_time_format"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="5.0dip"
+                            n1:background="@color/service_status_terminated" />>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        n1:id="@id/rl_epg_channel_update"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_below="@id/rl_time_format"
+                        n1:background="@drawable/selector_checkbox"
+                        n1:focusable="true"
+                        n1:nextFocusUp="@id/rl_time_format"
+                        n1:paddingTop="5.0dip"
+                        n1:visibility="visible">
+
+                        <TextView
+                            n1:id="@id/tv_epg_channel_update"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginBottom="10.0dip"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:background="@drawable/selector_parental_setting"
+                            n1:drawableLeft="@drawable/live_tv_guide_setting"
+                            n1:drawablePadding="30.0dip"
+                            n1:fontFamily="@string/font_family_regular"
+                            n1:text="@string/tv_guide_channel_update"
+                            n1:textColor="@color/cart_list_item_color"
+                            n1:textSize="18.0dip" />
+
+                        <ImageView
+                            n1:id="@id/iv_epg_channel_update_forward_arrow2"
+                            n1:layout_width="20.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:layout_alignParentEnd="true"
+                            n1:layout_alignParentRight="true"
+                            n1:layout_marginEnd="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:src="@drawable/arrow_f" />
+
+                        <ImageView
+                            n1:id="@id/iv_divider5"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="1.0px"
+                            n1:layout_below="@id/tv_epg_channel_update"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="5.0dip"
+                            n1:background="@color/service_status_terminated" />>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        n1:id="@id/rl_live_vod_layout"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_below="@id/rl_epg_channel_update"
+                        n1:background="@drawable/selector_checkbox"
+                        n1:focusable="true"
+                        n1:nextFocusUp="@id/rl_epg_channel_update"
+                        n1:paddingTop="5.0dip"
+                        n1:visibility="visible">
+
+                        <TextView
+                            n1:id="@id/tv_live_vod_layout"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginBottom="10.0dip"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:background="@drawable/selector_parental_setting"
+                            n1:drawableLeft="@drawable/layout_select"
+                            n1:drawablePadding="30.0dip"
+                            n1:fontFamily="@string/font_family_regular"
+                            n1:text="@string/layout_selection"
+                            n1:textColor="@color/cart_list_item_color"
+                            n1:textSize="18.0dip" />
+
+                        <ImageView
+                            n1:id="@id/iv_live_vod_layout_forward_arrow2"
+                            n1:layout_width="20.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:layout_alignParentEnd="true"
+                            n1:layout_alignParentRight="true"
+                            n1:layout_marginEnd="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:src="@drawable/arrow_f" />
+
+                        <ImageView
+                            n1:id="@id/iv_divider6"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="1.0px"
+                            n1:layout_below="@id/tv_live_vod_layout"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="5.0dip"
+                            n1:background="@color/service_status_terminated" />>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        n1:id="@id/rl_live_vod_daily_update"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_below="@id/rl_live_vod_layout"
+                        n1:background="@drawable/selector_checkbox"
+                        n1:focusable="true"
+                        n1:nextFocusUp="@id/rl_live_vod_layout"
+                        n1:paddingTop="5.0dip"
+                        n1:visibility="visible">
+
+                        <TextView
+                            n1:id="@id/tv_live_vod_daily_update"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:layout_marginBottom="10.0dip"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:background="@drawable/selector_parental_setting"
+                            n1:drawableLeft="@drawable/auto_update"
+                            n1:drawablePadding="30.0dip"
+                            n1:fontFamily="@string/font_family_regular"
+                            n1:text="@string/daily_update"
+                            n1:textColor="@color/cart_list_item_color"
+                            n1:textSize="18.0dip" />
+
+                        <ImageView
+                            n1:id="@id/iv_live_vod_daily_update_forward_arrow2"
+                            n1:layout_width="20.0dip"
+                            n1:layout_height="wrap_content"
+                            n1:layout_alignParentEnd="true"
+                            n1:layout_alignParentRight="true"
+                            n1:layout_marginEnd="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="10.0dip"
+                            n1:src="@drawable/arrow_f" />
+
+                        <ImageView
+                            n1:id="@id/iv_divider7"
+                            n1:layout_width="fill_parent"
+                            n1:layout_height="1.0px"
+                            n1:layout_below="@id/tv_live_vod_daily_update"
+                            n1:layout_marginLeft="20.0dip"
+                            n1:layout_marginRight="20.0dip"
+                            n1:layout_marginTop="5.0dip"
+                            n1:background="@color/service_status_terminated" />>
+                    </RelativeLayout>
+
+                    <Button
+                        n1:id="@id/btn_back_settings"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="wrap_content"
+                        n1:layout_below="@id/rl_live_vod_daily_update"
+                        n1:layout_marginBottom="20.0dip"
+                        n1:layout_marginLeft="20.0dip"
+                        n1:layout_marginRight="20.0dip"
+                        n1:layout_marginTop="15.0dip"
+                        n1:background="@drawable/selector_save_button"
+                        n1:focusable="true"
+                        n1:text="@string/back_button"
+                        n1:textColor="@drawable/selector_save_color" />
+                </RelativeLayout>
+            </ScrollView>
+            <include n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/app_bar_drawer" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.design.widget.NavigationView n1:layout_gravity="start" n1:id="@id/nav_view" n1:fitsSystemWindows="true" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n3:headerLayout="@layout/nav_header_drawer" n3:itemBackground="@layout/nav_view_item_background" n3:menu="@menu/menu_dashboard" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

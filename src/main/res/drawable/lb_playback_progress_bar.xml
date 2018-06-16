@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item n1:id="@android:id/background" n1:drawable="@color/lb_playback_background_progress_color"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:id="@android:id/secondaryProgress"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <clip n2:drawable="@color/lb_playback_secondary_progress_color" />
+    </item>
+    <item n3:id="@android:id/progress"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <clip n3:drawable="@color/lb_playback_progress_color_no_theme" />
+    </item>
+</layer-list>

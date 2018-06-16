@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item n1:left="1.0dip" n1:top="1.0dip" n1:right="1.0dip" n1:bottom="1.0dip"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <solid n1:color="@android:color/transparent" />
+            <stroke n1:width="4.0dip" n1:color="#ffc6dafb" />
+        </shape>
+    </item>
+    <item n2:drawable="@drawable/common_google_signin_btn_icon_dark_normal"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</layer-list>

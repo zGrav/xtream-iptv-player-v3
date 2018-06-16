@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list n1:oneshot="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_00" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_01" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_02" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_03" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_04" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_05" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_06" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_07" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_08" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_09" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_10" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_11" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_12" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_13" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_14" />
+    <item n1:duration="13" n1:drawable="@drawable/ic_group_collapse_15" />
+</animation-list>

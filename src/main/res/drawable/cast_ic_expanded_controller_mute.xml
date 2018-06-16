@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="true" n1:state_selected="false" n1:drawable="@drawable/quantum_ic_volume_up_white_36"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_enabled="true" n2:state_selected="true" n2:drawable="@drawable/quantum_ic_volume_off_white_36"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:state_enabled="false" n3:state_selected="false" n3:drawable="@drawable/quantum_ic_volume_up_grey600_36"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:state_enabled="false" n4:state_selected="true" n4:drawable="@drawable/quantum_ic_volume_off_grey600_36"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item n5:drawable="@drawable/quantum_ic_volume_up_white_36"
+      xmlns:n5="http://schemas.android.com/apk/res/android" />
+</selector>

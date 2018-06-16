@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/mr_expandable_area" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/mr_dialog_area" n1:background="?colorBackgroundFloating" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/mr_title_bar" n1:paddingLeft="24.0dip" n1:paddingRight="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textAppearance="@style/TextAppearance.MediaRouter.Title" n1:ellipsize="end" n1:gravity="center_vertical" n1:id="@id/mr_name" n1:layout_width="0.0dip" n1:layout_height="72.0dip" n1:singleLine="true" n1:layout_weight="1.0" />
+            <ImageButton n1:layout_gravity="center_vertical" n1:id="@id/mr_close" n1:background="?selectableItemBackgroundBorderless" n1:layout_width="48.0dip" n1:layout_height="48.0dip" n1:src="?mediaRouteCloseDrawable" n1:contentDescription="@string/mr_controller_close_description" />
+        </LinearLayout>
+        <FrameLayout n1:id="@id/mr_custom_control" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <FrameLayout n1:id="@id/mr_default_control" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:layout_gravity="top" n1:id="@id/mr_art" n1:background="?colorPrimary" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:scaleType="fitXY" n1:adjustViewBounds="true" n1:contentDescription="@string/mr_controller_album_art" />
+            <LinearLayout n1:layout_gravity="bottom" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:splitMotionEvents="false">
+                <LinearLayout n1:theme="?mediaRouteControlPanelThemeOverlay" n1:layout_gravity="bottom" n1:orientation="vertical" n1:id="@id/mr_media_main_control" n1:paddingTop="16.0dip" n1:paddingBottom="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <include n1:id="@id/mr_playback_control" layout="@layout/mr_playback_control" />
+                    <View n1:id="@id/mr_control_divider" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="8.0dip" />
+                    <include n1:id="@id/mr_volume_control" layout="@layout/mr_volume_control" />
+                </LinearLayout>
+                <android.support.v7.app.OverlayListView n1:theme="?mediaRouteControlPanelThemeOverlay" n1:scrollbarStyle="outsideOverlay" n1:id="@id/mr_volume_group_list" n1:paddingTop="@dimen/mr_controller_volume_group_list_padding_top" n1:visibility="gone" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:splitMotionEvents="false" />
+            </LinearLayout>
+        </FrameLayout>
+        <include layout="@layout/abc_alert_dialog_button_bar_material" />
+    </LinearLayout>
+</FrameLayout>

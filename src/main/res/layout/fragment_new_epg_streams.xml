@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/rl_newepg_fragment" n1:background="@color/light_gray" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/tv_view_provider" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="linearView" />
+    <TextView n1:textSize="30.0dip" n1:gravity="center" n1:id="@id/tv_noStream" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="60.0dip" n1:text="@string/no_stream_found" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_thin" n1:textAlignment="center" />
+    <ProgressBar n1:id="@id/pb_loader" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="50.0dip" n1:indeterminate="true" n1:layout_below="@id/sliding_tabs" n1:layout_centerHorizontal="true" />
+    <TextView n1:textSize="30.0dip" n1:gravity="center" n1:id="@id/tv_no_record_found" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="60.0dip" n1:text="@string/no_record_found" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_thin" />
+    <RelativeLayout n1:orientation="vertical" n1:id="@id/ll_epg_view" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <RelativeLayout n1:id="@id/ll_epg_details" n1:background="@color/epg_background" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="140.0dip">
+            <TextView n1:textSize="26.0sp" n1:textColor="@color/background_material_light" n1:id="@id/current_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="Time" n1:layout_alignParentTop="true" n1:layout_marginEnd="30.0dip" n1:layout_alignParentEnd="true" />
+            <TextView n1:textSize="26.0sp" n1:textColor="@color/background_material_light" n1:id="@id/current_event" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="Program Title" n1:layout_alignParentTop="true" n1:layout_marginStart="20.0dip" n1:layout_alignParentStart="true" />
+            <TextView n1:textSize="16.0sp" n1:textColor="@color/background_material_light" n1:id="@id/current_event_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="50.0dip" n1:text="Program Title" n1:layout_alignParentTop="true" n1:layout_marginStart="20.0dip" n1:layout_alignParentStart="true" />
+            <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/current_event_time">
+                <TextView n1:textSize="16.0sp" n1:textColor="@color/background_material_light" n1:id="@id/current_event_description" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Description" n1:layout_alignParentTop="true" n1:layout_marginStart="20.0dip" n1:layout_alignParentStart="true" />
+            </ScrollView>
+        </RelativeLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/ll_epg_details">
+            <z.xtreamiptv.playerv3.view.utility.epg.EPG n1:id="@id/epg" n1:background="@color/epg_background" n1:paddingTop="10.0dip" n1:focusable="true" n1:nextFocusUp="@id/sliding_tabs" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_focused="true" n1:state_pressed="false"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:id="@id/listview_background_shape">
+            <corners n1:radius="360.0dip" />
+            <solid n1:color="#ff636468" />
+            <padding n1:left="5.0dip" n1:top="5.0dip" n1:right="5.0dip" n1:bottom="5.0dip" />
+        </shape>
+    </item>
+</selector>

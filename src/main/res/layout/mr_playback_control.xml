@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="horizontal" n1:paddingLeft="24.0dip" n1:paddingRight="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageButton n1:id="@id/mr_control_playback_ctrl" n1:background="?selectableItemBackgroundBorderless" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="12.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/mr_controller_play" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/mr_control_title_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/mr_control_playback_ctrl" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true">
+        <TextView n1:textAppearance="@style/TextAppearance.MediaRouter.PrimaryText" n1:id="@id/mr_control_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" />
+        <TextView n1:textAppearance="@style/TextAppearance.MediaRouter.SecondaryText" n1:id="@id/mr_control_subtitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

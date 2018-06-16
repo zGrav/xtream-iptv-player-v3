@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_checked="true" n1:drawable="@drawable/player_play"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_checked="false" n2:drawable="@drawable/player_pause"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</selector>

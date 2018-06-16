@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="true" n1:state_checked="true" n1:drawable="@drawable/mr_button_connected_dark"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_enabled="true" n2:state_checkable="true" n2:drawable="@drawable/mr_button_connecting_dark"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:state_enabled="true" n3:drawable="@drawable/ic_mr_button_disconnected_dark"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:drawable="@drawable/ic_mr_button_disabled_dark"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</selector>

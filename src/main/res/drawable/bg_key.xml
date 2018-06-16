@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:drawable="@drawable/list_item_bg_normal" n1:state_activated="false"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_pressed="true" n2:drawable="@drawable/list_item_bg_pressed"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:drawable="@drawable/list_item_bg_pressed" n3:state_activated="true"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</selector>

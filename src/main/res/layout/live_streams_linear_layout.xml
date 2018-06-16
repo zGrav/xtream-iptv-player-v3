@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="horizontal" n1:id="@id/rl_streams_layout" n1:background="@drawable/selector_vod_layout" n1:paddingLeft="1.0dip" n1:paddingTop="1.0dip" n1:paddingRight="1.0dip" n1:paddingBottom="1.0dip" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="100.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView n1:id="@id/card_view" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="110.0dip" n2:cardElevation="2.0dip" n2:cardUseCompatPadding="true" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/iv_channel_logo" n1:tag="image_tag" n1:layout_width="70.0dip" n1:layout_height="60.0dip" n1:layout_marginLeft="3.0dip" n1:src="@drawable/iptv_placeholder" n1:layout_weight="1.0" />
+        <RelativeLayout n1:id="@id/rl_movie_image" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/iv_favourite" n1:background="@drawable/selector_favourite_vod" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="11.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/favourite_yellow" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout n1:layout_gravity="center_vertical" n1:id="@id/rl_channel_bottom" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="83.0dip" n1:layout_marginTop="0.0dip" n1:layout_marginRight="45.0dip">
+            <RelativeLayout n1:gravity="center_vertical" n1:id="@id/relative_layout_loading" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="2.0dip" n1:layout_centerVertical="true">
+                <TextView n1:textSize="12.0dip" n1:textColor="@color/black" n1:ellipsize="marquee" n1:layout_gravity="center_vertical" n1:id="@id/tv_movie_name" n1:paddingLeft="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="0.0dip" n1:layout_marginRight="0.0dip" n1:text="@string/loading" n1:layout_centerVertical="true" />
+                <TextView n1:textSize="10.0dip" n1:textColor="@color/colorPrimary" n1:id="@id/tv_current_live" n1:visibility="gone" n1:layout_width="200.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_marginRight="2.0dip" n1:layout_below="@id/tv_movie_name" n1:paddingStart="5.0dip" n1:layout_marginEnd="5.0dip" />
+                <TextView n1:textSize="10.0dip" n1:textColor="@color/colorPrimary" n1:id="@id/tv_time" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_above="@id/progressBar" n1:layout_alignRight="@id/progressBar" />
+                <ProgressBar n1:id="@id/progressBar" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="3.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="5.0dip" n1:progressDrawable="@drawable/epgprogress" n1:layout_below="@id/tv_current_live" style="?android:progressBarStyleHorizontal" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout n1:layout_gravity="end" n1:id="@id/ll_menu" n1:visibility="gone" n1:nextFocusDown="@id/card_view" n1:layout_width="20.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="11.0dip" n1:layout_marginRight="10.0dip">
+            <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textSize="25.0dip" n1:id="@id/tv_streamOptions" n1:background="@drawable/selector_menu" n1:paddingTop="5.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="5.0dip" n1:text="⋮" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

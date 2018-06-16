@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.internal.NavigationMenuView n1:id="@id/design_navigation_view" n1:paddingBottom="@dimen/design_navigation_padding_bottom" n1:scrollbars="vertical" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android" />

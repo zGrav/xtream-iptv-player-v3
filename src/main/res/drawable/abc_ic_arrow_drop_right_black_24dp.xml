@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector n1:tint="?colorControlNormal" n1:height="24.0dip" n1:width="24.0dip" n1:autoMirrored="true" n1:viewportWidth="24.0" n1:viewportHeight="24.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <group n1:name="arrow" n1:pivotX="12.0" n1:pivotY="12.0" n1:rotation="90.0">
+        <path n1:fillColor="@android:color/black" n1:pathData="M7,14 L12,9 L17,14 L7,14 Z" />
+        <path n1:pathData="M0,0 L24,0 L24,24 L0,24 L0,0 Z" />
+    </group>
+</vector>

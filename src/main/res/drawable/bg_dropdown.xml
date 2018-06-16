@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <stroke n1:width="1.0dip" n1:color="@color/black"
+                      xmlns:n1="http://schemas.android.com/apk/res/android" />
+                    <corners n2:radius="3.0dip"
+                      xmlns:n2="http://schemas.android.com/apk/res/android" />
+                    <solid n3:color="@android:color/transparent"
+                      xmlns:n3="http://schemas.android.com/apk/res/android" />
+                    <padding n4:left="5.0dip" n4:top="5.0dip" n4:right="5.0dip" n4:bottom="5.0dip"
+                      xmlns:n4="http://schemas.android.com/apk/res/android" />
+                </shape>
+            </item>
+            <item>
+                <bitmap n5:gravity="center|right" n5:src="@drawable/arrow_f"
+                  xmlns:n5="http://schemas.android.com/apk/res/android" />
+            </item>
+        </layer-list>
+    </item>
+    <item n6:state_focused="true" n6:drawable="@drawable/att_to_fav"
+      xmlns:n6="http://schemas.android.com/apk/res/android" />
+</layer-list>

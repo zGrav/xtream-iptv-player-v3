@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/onboarding_fragment_root" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/background_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <ImageView n1:id="@id/main_icon" style="?onboardingMainIconStyle" />
+    <LinearLayout n1:id="@id/page_container" n1:visibility="gone" style="?onboardingHeaderStyle">
+        <TextView n1:id="@id/title" style="?onboardingTitleStyle" />
+        <TextView n1:id="@id/description" style="?onboardingDescriptionStyle" />
+    </LinearLayout>
+    <FrameLayout n1:id="@id/content_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/navigator_container" n1:layout_below="@id/page_container" n1:layout_centerHorizontal="true" />
+    <FrameLayout n1:id="@id/navigator_container" style="?onboardingNavigatorContainerStyle">
+        <android.support.v17.leanback.widget.PagingIndicator n1:id="@id/page_indicator" n1:visibility="gone" style="?onboardingPageIndicatorStyle" />
+        <Button n1:id="@id/button_start" n1:visibility="gone" style="?onboardingStartButtonStyle" />
+    </FrameLayout>
+    <FrameLayout n1:id="@id/foreground_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <ImageView n1:id="@id/logo" style="?onboardingLogoStyle" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_gravity="bottom" n1:orientation="vertical" n1:background="#cc000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:paddingTop="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageButton n1:id="@id/exo_prev" style="@style/ExoMediaButton.Previous" />
+        <ImageButton n1:id="@id/exo_rew" style="@style/ExoMediaButton.Rewind" />
+        <ImageButton n1:id="@id/exo_shuffle" style="@style/ExoMediaButton.Shuffle" />
+        <ImageButton n1:id="@id/exo_repeat_toggle" style="@style/ExoMediaButton" />
+        <ImageButton n1:id="@id/exo_play" style="@style/ExoMediaButton.Play" />
+        <ImageButton n1:id="@id/exo_pause" style="@style/ExoMediaButton.Pause" />
+        <ImageButton n1:id="@id/exo_ffwd" style="@style/ExoMediaButton.FastForward" />
+        <ImageButton n1:id="@id/exo_next" style="@style/ExoMediaButton.Next" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="4.0dip">
+        <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:textColor="#ffbebebe" n1:id="@id/exo_position" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:includeFontPadding="false" />
+        <com.google.android.exoplayer2.ui.DefaultTimeBar n1:id="@id/exo_progress" n1:layout_width="0.0dip" n1:layout_height="26.0dip" n1:layout_weight="1.0" />
+        <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:textColor="#ffbebebe" n1:id="@id/exo_duration" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

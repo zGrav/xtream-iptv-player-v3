@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.DrawerLayout n1:id="@id/drawer_layout" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout n1:id="@id/appbar_toolbar" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:paddingTop="10.0dip" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="90.0dip" n1:minHeight="?actionBarSize" n1:layout_centerInParent="true" n2:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/tv_header_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:layout_marginBottom="5.0dip" n1:src="@drawable/logo_home" n1:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+            <RelativeLayout n1:id="@id/rl_settings" n1:background="@color/colorAccent" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_settings" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:layout_marginBottom="12.0dip" n1:text="@string/select_your_time_format" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_bold" />
+            </RelativeLayout>
+            <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <RelativeLayout n1:background="@color/light_gray" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <android.support.v7.widget.CardView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="10.0dip">
+                        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                            <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                                <RadioGroup n1:id="@id/rg_radio" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_below="@id/tv_media_player_heading">
+                                    <RadioButton n1:textSize="18.0dip" n1:textColor="@color/black" n1:id="@id/rb_24hr" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:text="@string/milatary_time" />
+                                    <RadioButton n1:textSize="18.0dip" n1:textColor="@color/black" n1:id="@id/rb_12hr" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:text="@string/normal_time" />
+                                </RadioGroup>
+                                <LinearLayout n1:orientation="horizontal" n1:padding="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/rg_radio">
+                                    <Button n1:textColor="@drawable/selector_save_color" n1:id="@id/bt_save_changes" n1:background="@drawable/selector_save_button" n1:focusable="true" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="5.0dip" n1:text="@string/save_changes" n1:layout_weight="0.9" />
+                                    <Button n1:textColor="@drawable/selector_save_color" n1:id="@id/btn_back_playerselection" n1:background="@drawable/selector_save_button" n1:focusable="true" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="5.0dip" n1:text="@string/back_button" n1:layout_weight="1.0" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+            </ScrollView>
+            <include n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/app_bar_drawer" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.design.widget.NavigationView n1:layout_gravity="start" n1:id="@id/nav_view" n1:fitsSystemWindows="true" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n3:headerLayout="@layout/nav_header_drawer" n3:itemBackground="@layout/nav_view_item_background" n3:menu="@menu/menu_dashboard" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

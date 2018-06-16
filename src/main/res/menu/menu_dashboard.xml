@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <group n1:checkableBehavior="single"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <item n1:icon="@drawable/home" n1:id="@id/nav_home" n1:title="@string/menu_home" />
+        <item n1:icon="@drawable/livetv_icon" n1:id="@id/nav_live_tv" n1:title="@string/menu_live_tv" />
+        <item n1:icon="@drawable/guide_icon" n1:id="@id/nav_live_tv_guide" n1:title="@string/menu_live_tv_guide" />
+        <item n1:icon="@drawable/account_info" n1:id="@id/nav_account_info" n1:title="@string/menu_account_info" />
+        <item n1:icon="@drawable/vod_icon" n1:id="@id/nav_vod" n1:title="@string/menu_vod" />
+        <item n1:icon="@drawable/vod_icon" n1:id="@id/nav_series" n1:visible="true" n1:title="@string/menu_series" />
+        <item n1:icon="@drawable/tv_archive" n1:id="@id/nav_archive" n1:title="@string/menu_archive" />
+        <item n1:icon="@drawable/settings_icon" n1:id="@id/nav_settings" n1:title="@string/menu_settings" />
+        <item n1:icon="@drawable/logout_icon" n1:id="@id/nav_logout" n1:title="@string/menu_logout" />
+    </group>
+</menu>

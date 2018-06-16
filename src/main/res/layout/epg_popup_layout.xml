@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/rl_epg_layout" n1:background="@color/dark_black2" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:background="@color/white" n1:layout_width="500.0dip" n1:layout_height="wrap_content" n1:layout_centerInParent="true" n1:layout_marginStart="200.0dip">
+        <RelativeLayout n1:id="@id/ll_play" n1:background="@drawable/selector_checkbox" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="20.0dip" n1:textColor="@color/black" n1:id="@id/tv_play" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="10.0dip" n1:text="PLAY" n1:drawableLeft="@drawable/epg_play" n1:drawablePadding="10.0dip" n1:fontFamily="@string/font_family_medium" />
+            <ImageView n1:background="@color/black" n1:layout_width="fill_parent" n1:layout_height="2.0px" n1:layout_marginTop="10.0dip" n1:layout_below="@id/tv_play" />
+        </RelativeLayout>
+        <RelativeLayout n1:id="@id/ll_move_to_next_cat" n1:background="@drawable/selector_checkbox" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/ll_play">
+            <TextView n1:textSize="20.0dip" n1:textColor="@color/black" n1:id="@id/tv_move_to_next_cat" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="10.0dip" n1:text="MOVE TO NEXT CATEGORY" n1:drawableLeft="@drawable/epg_next" n1:drawablePadding="10.0dip" n1:fontFamily="@string/font_family_medium" />
+            <ImageView n1:background="@color/black" n1:layout_width="fill_parent" n1:layout_height="2.0px" n1:layout_marginTop="15.0dip" n1:layout_below="@id/tv_move_to_next_cat" />
+        </RelativeLayout>
+        <RelativeLayout n1:id="@id/ll_move_to_prev_cat" n1:background="@drawable/selector_checkbox" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/ll_move_to_next_cat">
+            <TextView n1:textSize="20.0dip" n1:textColor="@color/black" n1:id="@id/tv_move_to_prev_cat" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="10.0dip" n1:text="MOVE TO PREV CATEGORY" n1:drawableLeft="@drawable/epg_prev" n1:drawablePadding="10.0dip" n1:fontFamily="@string/font_family_medium" />
+            <ImageView n1:background="@color/black" n1:layout_width="fill_parent" n1:layout_height="2.0px" n1:layout_marginTop="15.0dip" n1:layout_below="@id/tv_move_to_prev_cat" />
+        </RelativeLayout>
+        <RelativeLayout n1:id="@id/ll_close" n1:background="@drawable/selector_checkbox" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/ll_move_to_prev_cat">
+            <TextView n1:textSize="20.0dip" n1:textColor="@color/black" n1:id="@id/tv_close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="15.0dip" n1:text="CLOSE" n1:drawableLeft="@drawable/epg_stop" n1:drawablePadding="10.0dip" n1:fontFamily="@string/font_family_medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

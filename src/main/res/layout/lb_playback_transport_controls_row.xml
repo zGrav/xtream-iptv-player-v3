@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingBottom="@dimen/lb_playback_transport_control_row_padding_bottom" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:layout_gravity="bottom" n1:orientation="horizontal" n1:id="@id/controls_card" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/lb_playback_transport_control_info_margin_bottom" n1:paddingStart="?browsePaddingStart" n1:paddingEnd="?browsePaddingEnd">
+            <ImageView n1:layout_gravity="top" n1:id="@id/image" n1:layout_width="wrap_content" n1:layout_height="@dimen/lb_playback_transport_image_height" n1:scaleType="fitStart" n1:adjustViewBounds="true" n1:layout_marginEnd="@dimen/lb_playback_transport_image_margin_end" />
+            <FrameLayout n1:gravity="bottom" n1:layout_gravity="top" n1:id="@id/description_dock" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <android.support.v17.leanback.widget.ThumbsBar n1:layout_gravity="bottom" n1:orientation="horizontal" n1:id="@id/thumbs_row" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/lb_playback_transport_thumbs_bottom_margin" />
+    </FrameLayout>
+    <android.support.v17.leanback.widget.PlaybackTransportRowView n1:orientation="vertical" n1:id="@id/transport_row" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:paddingStart="?browsePaddingStart" n1:paddingEnd="?browsePaddingEnd">
+        <FrameLayout n1:id="@id/controls_dock" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/lb_playback_transport_controlbar_margin_start" n1:layoutDirection="ltr" />
+        <android.support.v17.leanback.widget.SeekBar n1:id="@id/playback_progress" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/lb_playback_transport_progressbar_height" />
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/lb_playback_transport_controlbar_margin_start" n1:layoutDirection="ltr">
+            <FrameLayout n1:id="@id/secondary_controls_dock" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentStart="true" />
+            <TextView n1:layout_gravity="top" n1:id="@id/current_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/lb_playback_transport_time_margin_top" n1:layout_marginStart="@dimen/lb_playback_transport_time_margin" n1:layout_toStartOf="@id/separate_time" style="?playbackControlsTimeStyle" />
+            <TextView n1:layout_gravity="top" n1:id="@id/separate_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/lb_playback_transport_time_margin_top" n1:text="@string/lb_playback_time_separator" n1:layout_marginStart="@dimen/lb_playback_transport_time_margin" n1:layout_toStartOf="@id/total_time" style="?playbackControlsTimeStyle" />
+            <TextView n1:layout_gravity="top" n1:id="@id/total_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/lb_playback_transport_time_margin_top" n1:layout_marginStart="@dimen/lb_playback_transport_time_margin" n1:layout_alignParentEnd="true" style="?playbackControlsTimeStyle" />
+        </RelativeLayout>
+    </android.support.v17.leanback.widget.PlaybackTransportRowView>
+</LinearLayout>

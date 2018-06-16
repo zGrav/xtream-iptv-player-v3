@@ -1,0 +1,124 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://maven.google.com" // Google's Maven repository
+        }
+        google()
+        maven { url "https://jitpack.io" }
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.8.1'
+        classpath "io.realm:realm-gradle-plugin:5.3.0"
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://maven.google.com" // Google's Maven repository
+    }
+    google()
+    maven { url "https://jitpack.io" }
+    jcenter()
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId 'z.xtreamiptv.playerv3'
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = [ "src/main/lib" ]
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // android/google
+    implementation group: 'com.android.support', name: 'design', version: '28.0.0-alpha3'
+    implementation 'com.android.support:cardview-v7:28.0.0-alpha3'
+    implementation 'com.android.support:recyclerview-v7:28.0.0-alpha3'
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    implementation 'com.android.support:support-v13:28.0.0-alpha3'
+    implementation 'com.android.support:support-v4:28.0.0-alpha3'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation group: 'com.google.guava', name: 'guava', version: '25.1-android'
+
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+
+    implementation group: 'com.google.android.gms', name: 'play-services-ads', version: '12.0.0'
+    implementation group: 'com.google.android.gms', name: 'play-services-cast', version: '12.0.0'
+    implementation group: 'com.google.android.gms', name: 'play-services-cast-framework', version: '12.0.0'
+
+    implementation group: 'com.google.firebase', name: 'firebase-auth', version: '12.0.0'
+
+    implementation group: 'com.google.android.exoplayer', name: 'exoplayer', version: '2.6.1'
+
+    // retrofit
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.4.0'
+    implementation group: 'com.squareup.retrofit2', name: 'converter-simplexml', version: '2.4.0'
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.4.0'
+
+    // simple XML
+    implementation group: 'org.simpleframework', name: 'simple-xml', version: '2.7.1'
+
+    // butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    // picasso
+    implementation group: 'com.squareup.picasso', name: 'picasso', version: '2.5.2'
+
+    // sectionedrecycler
+    implementation 'com.github.IntruderShanky:Sectioned-RecyclerView:2.1.1'
+
+    // matprogbar
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.4.2'
+
+    // cirimgview
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    // joda
+    implementation group: 'joda-time', name: 'joda-time', version: '2.10'
+
+    // squareup
+    implementation group: 'com.squareup.okhttp', name: 'okhttp', version: '2.7.5'
+
+    // bumptech
+    implementation group: 'com.github.bumptech.glide', name: 'glide', version: '4.7.1'
+}

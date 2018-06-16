@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="wrap_content" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/root" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</ScrollView>

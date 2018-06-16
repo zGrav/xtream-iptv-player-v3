@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost n1:id="@id/tab_host" n1:layout_width="fill_parent" n1:layout_height="300.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TabWidget n1:id="@android:id/tabs" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <FrameLayout n1:id="@android:id/tabcontent" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ListView n1:id="@id/text_list_view" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:choiceMode="singleChoice" n1:scrollbarFadeDuration="1000" />
+            <ListView n1:id="@id/audio_list_view" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:choiceMode="singleChoice" n1:scrollbarFadeDuration="1000" />
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

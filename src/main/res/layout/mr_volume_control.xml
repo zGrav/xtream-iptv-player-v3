@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:paddingLeft="24.0dip" n1:paddingRight="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="48.0dip" n1:splitMotionEvents="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:gravity="center" n1:layout_width="24.0dip" n1:layout_height="24.0dip" n1:src="?mediaRouteAudioTrackDrawable" n1:scaleType="center" />
+    <android.support.v7.app.MediaRouteVolumeSlider n1:id="@id/mr_volume_slider" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:maxHeight="48.0dip" n1:minHeight="48.0dip" n1:layout_weight="1.0" n1:contentDescription="@string/mr_controller_volume_slider" />
+    <android.support.v7.app.MediaRouteExpandCollapseButton n1:id="@id/mr_group_expand_collapse" n1:background="?selectableItemBackgroundBorderless" n1:padding="12.0dip" n1:visibility="gone" n1:layout_width="48.0dip" n1:layout_height="48.0dip" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/error_frame" n1:focusable="true" n1:focusableInTouchMode="true" n1:nextFocusLeft="@id/error_frame" n1:nextFocusRight="@id/error_frame" n1:nextFocusUp="@id/error_frame" n1:nextFocusDown="@id/error_frame" n1:descendantFocusability="afterDescendants" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_gravity="center" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ImageView n1:layout_gravity="center" n1:id="@id/image" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="@dimen/lb_error_image_max_height" />
+        <TextView n1:layout_gravity="center" n1:id="@id/message" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxWidth="@dimen/lb_error_message_max_width" style="?errorMessageStyle" />
+        <Button n1:layout_gravity="center" n1:id="@id/button" n1:visibility="gone" n1:nextFocusLeft="@id/button" n1:nextFocusRight="@id/button" n1:nextFocusUp="@id/button" n1:nextFocusDown="@id/button" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?android:buttonStyle" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set n1:shareInterpolator="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <alpha n1:interpolator="@android:anim/decelerate_interpolator" n1:duration="@integer/abc_config_activityShortDur" n1:fromAlpha="0.0" n1:toAlpha="1.0" />
+</set>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset n1:insetLeft="@dimen/abc_edit_text_inset_horizontal_material" n1:insetRight="@dimen/abc_edit_text_inset_horizontal_material" n1:insetTop="@dimen/abc_edit_text_inset_top_material" n1:insetBottom="@dimen/abc_edit_text_inset_bottom_material"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item n1:state_enabled="false" n1:drawable="@drawable/abc_textfield_default_mtrl_alpha" />
+        <item n1:state_focused="false" n1:state_pressed="false" n1:drawable="@drawable/abc_textfield_default_mtrl_alpha" />
+        <item n1:drawable="@drawable/abc_textfield_activated_mtrl_alpha" />
+    </selector>
+</inset>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="z.xtreamiptv.playerv3">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
+    <uses-feature android:glEsVersion="0x00020000" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="z.xtreamiptv.playerv3.view.app_shell.AppController" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true" android:banner="@mipmap/tv_banner">
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.LoginActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.DashboardActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.VodActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.SeasonsActivitiy" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.VodActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.SettingsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.SettingsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.ParentalControlActivitity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.ParentalControlActivitity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.ExoPlayerVodActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.AccountInfoActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.AccountInfoActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.SupportActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.SupportActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.VLCPlayerLiveStreamsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.VLCPlayerLiveStreamsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.VLCPlayerVodActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.VLCPlayerSeriesActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.VLCPlayerVodActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.VLCPlayerArchiveActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.VLCPlayerArchiveActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.MxPlayerLiveStreamsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.MxPlayerLiveStreamsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.MxPlayerVodActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.MXPlayerSeriesActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.MxPlayerVodActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.MxPlayerArchiveActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.MxPlayerArchiveActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.PlayerSelectionActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.PlayerSelectionActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.ImportEPGActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.ImportEPGActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.ImportStreamsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.ImportStreamsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.NewEPGActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.NewEPGActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.ViewDetailsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.ViewDetailsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.EPGTimeShiftActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.EPGTimeShiftActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.nstplayer.NSTPlayerActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.nstplayer.NSTPlayerActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="z.xtreamiptv.playerv3.view.nstplayer.NSTPlayerVodActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="z.xtreamiptv.playerv3.view.nstplayer.NSTPlayerSeriesActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.nstplayer.NSTPlayerVodActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.StreamFormatActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.StreamFormatActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.TVArchiveActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.TVArchiveActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.SubTVArchiveActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.SubTVArchiveActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.nstplayer.NSTPlayerArchiveActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.nstplayer.NSTPlayerArchiveActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="z.xtreamiptv.playerv3.view.exoplayer2.PlayerActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="z.xtreamiptv.playerv3.v2api.view.exoplayer2.PlayerActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="z.xtreamiptv.playerv3.view.exoplayer2.PlayerVodActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="z.xtreamiptv.playerv3.v2api.view.exoplayer2.PlayerVodActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="z.xtreamiptv.playerv3.view.exoplayer2.PlayerSeriesActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="z.xtreamiptv.playerv3.view.exoplayer2.PlayerArchiveActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:name="z.xtreamiptv.playerv3.v2api.view.exoplayer2.PlayerArchiveActivity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.VoDCategoryActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.VoDCategoryActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.VodActivityNewFlowSecondSubCategories" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.SeriesTabActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.SeriesTabActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.LiveActivityNewFlow" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.LiveActivityNewFlow" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.LiveCategoryActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.LiveCategoryActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.TimeFormatActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.TimeFormatActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.EPGChannelUpdateActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.EPGChannelUpdateActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.VodActivityWithCategory" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.VodActivityWithCategory" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.VodSubCatActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.LiveVodLayoutActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.LiveVodLayoutActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.LiveStreamsActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.LiveStreamsActivity" />
+        <activity android:theme="@style/Theme.CastVideosDark" android:label="@string/app_name" android:name="z.xtreamiptv.playerv3.view.cast.expandedcontrols.ExpandedControlsActivity" android:launchMode="singleInstance" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="z.xtreamiptv.playerv3.view.nstplayer.NSTPlayerActivity" />
+        </activity>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="z.xtreamiptv.iptvsmarters.view.cast.CastOptionsProvider" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.AutoUpdateChannelsandVODActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.AutoUpdateChannelsandVODActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.DashboardActivityV2" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.SeriesDetailActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.SeriesDetailActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.EpisodeDetailActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.EpisodeDetailActivity" />
+        <activity android:name="z.xtreamiptv.playerv3.view.activity.TermsConditionPage" />
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1" />
+    </application>
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false" n1:color="?colorControlNormal" n2:alpha="?android:disabledAlpha"
+      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <item n3:state_focused="true" n3:color="?colorControlActivated"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:state_pressed="true" n4:color="?colorControlActivated"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item n5:color="?colorControlActivated" n5:state_activated="true"
+      xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <item n6:state_selected="true" n6:color="?colorControlActivated"
+      xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <item n7:state_checked="true" n7:color="?colorControlActivated"
+      xmlns:n7="http://schemas.android.com/apk/res/android" />
+    <item n8:color="?colorControlNormal"
+      xmlns:n8="http://schemas.android.com/apk/res/android" />
+</selector>

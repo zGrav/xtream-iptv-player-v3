@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition n1:interpolator="@android:interpolator/fast_out_linear_in" n1:duration="@integer/lb_guidedstep_activity_background_fade_duration_ms" n2:lb_slideEdge="bottom" class="android.support.v17.leanback.transition.FadeAndShortSlide"
+  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />

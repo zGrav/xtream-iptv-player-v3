@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item>
+        <bitmap n1:src="@drawable/ic_audiotrack_light" n1:alpha="0.87"
+          xmlns:n1="http://schemas.android.com/apk/res/android" />
+    </item>
+</selector>

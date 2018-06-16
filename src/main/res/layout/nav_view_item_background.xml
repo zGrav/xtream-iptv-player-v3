@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector n1:layout_width="10.0dip" n1:layout_height="10.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:state_checked="true" n1:drawable="@color/colorPrimary" />
+    <item n1:state_focused="true" n1:drawable="@color/dark_gray_nav" />
+    <item n1:drawable="@android:color/transparent" />
+</selector>

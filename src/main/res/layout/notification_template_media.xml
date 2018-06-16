@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:id="@id/status_bar_latest_event_content" n1:layout_width="fill_parent" n1:layout_height="64.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:layout_width="@dimen/notification_large_icon_width" n1:layout_height="@dimen/notification_large_icon_height" layout="@layout/notification_template_icon_group" />
+    <include n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" layout="@layout/notification_template_lines_media" />
+    <LinearLayout n1:layout_gravity="end|center" n1:orientation="horizontal" n1:id="@id/media_actions" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layoutDirection="ltr" />
+    <include n1:layout_width="48.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:layout_marginEnd="6.0dip" layout="@layout/notification_media_cancel_action" />
+    <ImageView n1:id="@id/end_padder" n1:layout_width="6.0dip" n1:layout_height="fill_parent" />
+</LinearLayout>
