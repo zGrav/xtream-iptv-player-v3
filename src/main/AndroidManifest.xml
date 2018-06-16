@@ -27,8 +27,6 @@
         <activity android:name="z.xtreamiptv.playerv3.view.activity.ExoPlayerVodActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" />
         <activity android:name="z.xtreamiptv.playerv3.view.activity.AccountInfoActivity" />
         <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.AccountInfoActivity" />
-        <activity android:name="z.xtreamiptv.playerv3.view.activity.SupportActivity" />
-        <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.SupportActivity" />
         <activity android:name="z.xtreamiptv.playerv3.view.activity.VLCPlayerLiveStreamsActivity" />
         <activity android:name="z.xtreamiptv.playerv3.v2api.view.activity.VLCPlayerLiveStreamsActivity" />
         <activity android:name="z.xtreamiptv.playerv3.view.activity.VLCPlayerVodActivity" />
