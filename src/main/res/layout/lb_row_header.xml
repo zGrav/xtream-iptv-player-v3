@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <android.support.v17.leanback.widget.RowHeaderView n1:id="@id/row_header" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" style="?rowHeaderStyle" />
-    <TextView n1:id="@id/row_header_description" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" style="?rowHeaderDescriptionStyle" />
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v17.leanback.widget.RowHeaderView
+	android:id="@id/row_header"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:importantForAccessibility="no" style="?rowHeaderStyle" />
+    <TextView
+	android:id="@id/row_header_description"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:importantForAccessibility="no" style="?rowHeaderDescriptionStyle" />
 </LinearLayout>

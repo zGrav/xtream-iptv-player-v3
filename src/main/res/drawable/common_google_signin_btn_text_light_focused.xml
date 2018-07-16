@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list>
-    <item n1:left="1.0dip" n1:top="1.0dip" n1:right="1.0dip" n1:bottom="1.0dip"
-      xmlns:n1="http://schemas.android.com/apk/res/android">
-        <shape n1:shape="rectangle">
-            <solid n1:color="@android:color/transparent" />
-            <stroke n1:width="4.0dip" n1:color="#4d4284f2" />
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+		android:left="1.0dip"
+		android:top="1.0dip"
+		android:right="1.0dip"
+		android:bottom="1.0dip">
+        <shape
+			android:shape="rectangle">
+            <solid
+				android:color="@android:color/transparent" />
+            <stroke
+				android:width="4.0dip"
+				android:color="#4d4284f2" />
         </shape>
     </item>
-    <item n2:drawable="@drawable/common_google_signin_btn_text_light_normal"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item android:drawable="@drawable/common_google_signin_btn_text_light_normal" />
 </layer-list>

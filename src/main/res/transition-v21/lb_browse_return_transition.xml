@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<transitionSet>
-    <slide n1:interpolator="@android:interpolator/fast_out_linear_in" n1:duration="350" n1:slideEdge="@integer/slideEdgeStart"
-      xmlns:n1="http://schemas.android.com/apk/res/android">
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <slide
+        android:interpolator="@android:interpolator/fast_out_linear_in"
+        android:duration="350"
+        android:slideEdge="@integer/slideEdgeStart">
         <targets>
-            <target n1:targetId="@id/browse_headers_root" />
-            <target n1:targetId="@id/title_orb" />
+            <target
+	            android:targetId="@id/browse_headers_root" />
+            <target
+	            android:targetId="@id/title_orb" />
         </targets>
     </slide>
-    <slide n2:interpolator="@android:interpolator/fast_out_linear_in" n2:duration="350" n2:slideEdge="@integer/slideEdgeEnd"
-      xmlns:n2="http://schemas.android.com/apk/res/android">
+    <slide android:interpolator="@android:interpolator/fast_out_linear_in" android:duration="350" android:slideEdge="@integer/slideEdgeEnd"
+      >
         <targets>
-            <target n2:excludeId="@id/browse_headers_root" />
-            <target n2:excludeId="@id/title_orb" />
+            <target android:excludeId="@id/browse_headers_root" />
+            <target android:excludeId="@id/title_orb" />
         </targets>
     </slide>
-    <fade n3:interpolator="@android:interpolator/fast_out_linear_in" n3:duration="350"
-      xmlns:n3="http://schemas.android.com/apk/res/android">
+    <fade android:interpolator="@android:interpolator/fast_out_linear_in" android:duration="350"
+      >
         <targets>
-            <target n3:excludeId="@id/browse_headers_root" />
+            <target android:excludeId="@id/browse_headers_root" />
         </targets>
     </fade>
 </transitionSet>

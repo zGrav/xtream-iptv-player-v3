@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:id="@id/list_item" n1:background="?selectableItemBackground" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="fill_parent" n1:layout_height="?dropdownListPreferredItemHeight" n1:minWidth="196.0dip"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <LinearLayout n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
-        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/icon" n1:duplicateParentState="true" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginRight="8.0dip" />
-        <TextView n1:textAppearance="?textAppearanceLargePopupMenu" n1:ellipsize="marquee" n1:layout_gravity="center_vertical" n1:id="@id/title" n1:fadingEdge="horizontal" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" />
+<LinearLayout
+	android:orientation="vertical"
+	android:id="@id/list_item"
+	android:background="?selectableItemBackground"
+	android:paddingLeft="16.0dip"
+	android:paddingRight="16.0dip"
+	android:layout_width="fill_parent"
+	android:layout_height="?dropdownListPreferredItemHeight"
+	android:minWidth="196.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+	android:duplicateParentState="true"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent">
+        <ImageView
+	android:layout_gravity="center_vertical"
+	android:id="@id/icon"
+	android:duplicateParentState="true"
+	android:layout_width="32.0dip"
+	android:layout_height="32.0dip"
+	android:layout_marginRight="8.0dip" />
+        <TextView
+	android:textAppearance="?textAppearanceLargePopupMenu"
+	android:ellipsize="marquee"
+	android:layout_gravity="center_vertical"
+	android:id="@id/title"
+	android:fadingEdge="horizontal"
+	android:duplicateParentState="true"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:singleLine="true" />
     </LinearLayout>
 </LinearLayout>

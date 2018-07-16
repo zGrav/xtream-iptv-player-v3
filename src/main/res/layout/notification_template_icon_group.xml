@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ImageView n1:id="@id/icon" n1:layout_width="@dimen/notification_large_icon_width" n1:layout_height="@dimen/notification_large_icon_height" n1:scaleType="centerCrop"
-  xmlns:n1="http://schemas.android.com/apk/res/android" />
+<ImageView
+	android:id="@id/icon"
+	android:layout_width="@dimen/notification_large_icon_width"
+	android:layout_height="@dimen/notification_large_icon_height"
+	android:scaleType="centerCrop"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v17.leanback.widget.RowHeaderView n1:id="@id/row_header" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?headerStyle"
-  xmlns:n1="http://schemas.android.com/apk/res/android" />
+<android.support.v17.leanback.widget.RowHeaderView
+	android:id="@id/row_header"
+	android:focusable="true"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" style="?headerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

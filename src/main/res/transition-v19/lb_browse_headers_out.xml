@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<transitionSet n1:duration="@integer/lb_browse_headers_transition_duration"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
+<transitionSet
+	android:duration="@integer/lb_browse_headers_transition_duration"
+  xmlns:android="http://schemas.android.com/apk/res/android">
     <changeBounds />
     <transition class="android.support.v17.leanback.Scale">
         <targets>
-            <target n1:targetId="@id/container_list" />
+            <target
+	android:targetId="@id/container_list" />
         </targets>
     </transition>
-    <fade n1:fadingMode="fade_in" n1:startDelay="@integer/lb_browse_headers_transition_delay" />
-    <fade n1:fadingMode="fade_out" />
+    <fade
+	android:fadingMode="fade_in"
+	android:startDelay="@integer/lb_browse_headers_transition_delay" />
+    <fade
+	android:fadingMode="fade_out" />
 </transitionSet>

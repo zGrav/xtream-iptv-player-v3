@@ -1,20 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout n1:id="@id/notification_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/icon" n1:layout_width="@dimen/notification_large_icon_width" n1:layout_height="@dimen/notification_large_icon_height" n1:scaleType="center" />
-    <LinearLayout n1:layout_gravity="top" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-        <LinearLayout n1:orientation="horizontal" n1:id="@id/notification_main_column_container" n1:paddingTop="@dimen/notification_main_column_padding_top" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/notification_large_icon_width" n1:minHeight="@dimen/notification_large_icon_height" n1:layout_marginStart="@dimen/notification_large_icon_width">
-            <FrameLayout n1:id="@id/notification_main_column" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/notification_content_margin_start" n1:layout_marginRight="8.0dip" n1:layout_marginBottom="8.0dip" n1:layout_weight="1.0" n1:layout_marginStart="@dimen/notification_content_margin_start" n1:layout_marginEnd="8.0dip" />
-            <FrameLayout n1:id="@id/right_side" n1:paddingTop="@dimen/notification_right_side_padding_top" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="8.0dip" n1:layout_marginEnd="8.0dip">
-                <ViewStub n1:layout_gravity="end|center|top" n1:id="@id/time" n1:visibility="gone" n1:layout="@layout/notification_template_part_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
-                <ViewStub n1:layout_gravity="end|center|top" n1:id="@id/chronometer" n1:visibility="gone" n1:layout="@layout/notification_template_part_chronometer" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
-                <LinearLayout n1:layout_gravity="end|bottom|center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
-                    <TextView n1:textAppearance="@style/TextAppearance.Compat.Notification.Info" n1:id="@id/info" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" />
-                    <ImageView n1:layout_gravity="center" n1:id="@id/right_icon" n1:visibility="gone" n1:layout_width="16.0dip" n1:layout_height="16.0dip" n1:layout_marginLeft="8.0dip" n1:scaleType="centerInside" n1:alpha="0.6" n1:layout_marginStart="8.0dip" />
+<FrameLayout
+	android:id="@id/notification_background"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+	android:id="@id/icon"
+	android:layout_width="@dimen/notification_large_icon_width"
+	android:layout_height="@dimen/notification_large_icon_height"
+	android:scaleType="center" />
+    <LinearLayout
+	android:layout_gravity="top"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+        <LinearLayout
+	android:orientation="horizontal"
+	android:id="@id/notification_main_column_container"
+	android:paddingTop="@dimen/notification_main_column_padding_top"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="@dimen/notification_large_icon_width"
+	android:minHeight="@dimen/notification_large_icon_height"
+	android:layout_marginStart="@dimen/notification_large_icon_width">
+            <FrameLayout
+	android:id="@id/notification_main_column"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="@dimen/notification_content_margin_start"
+	android:layout_marginRight="8.0dip"
+	android:layout_marginBottom="8.0dip"
+	android:layout_weight="1.0"
+	android:layout_marginStart="@dimen/notification_content_margin_start"
+	android:layout_marginEnd="8.0dip" />
+            <FrameLayout
+	android:id="@id/right_side"
+	android:paddingTop="@dimen/notification_right_side_padding_top"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginRight="8.0dip"
+	android:layout_marginEnd="8.0dip">
+                <ViewStub
+	android:layout_gravity="end|center|top"
+	android:id="@id/time"
+	android:visibility="gone"
+	android:layout="@layout/notification_template_part_time"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+                <ViewStub
+	android:layout_gravity="end|center|top"
+	android:id="@id/chronometer"
+	android:visibility="gone"
+	android:layout="@layout/notification_template_part_chronometer"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+                <LinearLayout
+	android:layout_gravity="end|bottom|center"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="20.0dip">
+                    <TextView
+	android:textAppearance="@style/TextAppearance.Compat.Notification.Info"
+	android:id="@id/info"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:singleLine="true" />
+                    <ImageView
+	android:layout_gravity="center"
+	android:id="@id/right_icon"
+	android:visibility="gone"
+	android:layout_width="16.0dip"
+	android:layout_height="16.0dip"
+	android:layout_marginLeft="8.0dip"
+	android:scaleType="centerInside"
+	android:alpha="0.6"
+	android:layout_marginStart="8.0dip" />
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>
-        <ImageView n1:id="@id/action_divider" n1:background="?android:dividerHorizontal" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="@dimen/notification_large_icon_width" n1:layout_marginStart="@dimen/notification_large_icon_width" />
-        <LinearLayout n1:orientation="horizontal" n1:id="@id/actions" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/notification_large_icon_width" n1:divider="?android:listDivider" n1:showDividers="middle" n1:dividerPadding="12.0dip" n1:layout_marginStart="@dimen/notification_large_icon_width" />
+        <ImageView
+	android:id="@id/action_divider"
+	android:background="?android:dividerHorizontal"
+	android:visibility="gone"
+	android:layout_width="fill_parent"
+	android:layout_height="1.0px"
+	android:layout_marginLeft="@dimen/notification_large_icon_width"
+	android:layout_marginStart="@dimen/notification_large_icon_width" />
+        <LinearLayout
+	android:orientation="horizontal"
+	android:id="@id/actions"
+	android:visibility="gone"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="@dimen/notification_large_icon_width"
+	android:divider="?android:listDivider"
+	android:showDividers="middle"
+	android:dividerPadding="12.0dip"
+	android:layout_marginStart="@dimen/notification_large_icon_width" />
     </LinearLayout>
 </FrameLayout>

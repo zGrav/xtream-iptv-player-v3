@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v17.leanback.widget.HorizontalGridView n1:id="@id/row_content" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:rowHeight="wrap_content" style="?rowHorizontalGridStyle"
-  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+<android.support.v17.leanback.widget.HorizontalGridView
+	android:id="@id/row_content"
+	android:clipToPadding="false"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	app:rowHeight="wrap_content"
+	style="?rowHorizontalGridStyle"
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto" />

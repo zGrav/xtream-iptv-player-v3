@@ -1,25 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <android.support.v4.widget.DrawerLayout n1:id="@id/drawer_layout" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-        <android.support.design.widget.AppBarLayout n1:id="@id/appbar_toolbar" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-            <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:paddingTop="10.0dip" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="90.0dip" n1:minHeight="?actionBarSize" n1:layout_centerInParent="true" n2:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:n2="http://schemas.android.com/apk/res-auto">
-                <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-                    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/tv_header_title" n1:layout_width="2000.0dip" n1:layout_height="80.0dip" n1:layout_marginTop="0.0dip" n1:src="@drawable/logo_home" n1:layout_centerHorizontal="true" />
+<LinearLayout
+	android:orientation="vertical"
+	android:fitsSystemWindows="true"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.DrawerLayout
+	android:id="@id/drawer_layout"
+	android:fitsSystemWindows="true"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout
+	android:id="@id/appbar_toolbar"
+	android:fitsSystemWindows="true"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+	android:id="@id/toolbar"
+	android:paddingTop="10.0dip"
+	android:fitsSystemWindows="true"
+	android:layout_width="fill_parent"
+	android:layout_height="90.0dip"
+	android:minHeight="?actionBarSize"
+	android:layout_centerInParent="true" android:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:app="http://schemas.android.com/apk/res-auto">
+                <RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+                    <ImageView
+	android:layout_gravity="center_horizontal"
+	android:id="@id/tv_header_title"
+	android:layout_width="2000.0dip"
+	android:layout_height="80.0dip"
+	android:layout_marginTop="0.0dip"
+	android:src="@drawable/logo_home"
+	android:layout_centerHorizontal="true" />
                 </RelativeLayout>
             </android.support.v7.widget.Toolbar>
-            <RelativeLayout n1:id="@id/rl_settings" n1:background="@color/colorAccent" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-                <TextView n1:textSize="16.0dip" n1:textColor="@color/white" n1:id="@id/tv_settings" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:layout_marginBottom="12.0dip" n1:text="@string/vod" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_bold" />
+            <RelativeLayout
+	android:id="@id/rl_settings"
+	android:background="@color/colorAccent"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+                <TextView
+	android:textSize="16.0dip"
+	android:textColor="@color/white"
+	android:id="@id/tv_settings"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="12.0dip"
+	android:layout_marginBottom="12.0dip"
+	android:text="@string/vod"
+	android:layout_centerHorizontal="true"
+	android:fontFamily="@string/font_family_bold" />
             </RelativeLayout>
-            <RelativeLayout n1:id="@id/rl_vod_layout" n1:background="@color/light_gray" n1:paddingLeft="16.0dip" n1:paddingTop="16.0dip" n1:paddingRight="16.0dip" n1:paddingBottom="16.0dip" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-                <TextView n1:id="@id/tv_view_provider" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="gridView" />
-                <android.support.v7.widget.RecyclerView n1:id="@id/my_recycler_view" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
-                <TextView n1:textSize="30.0dip" n1:gravity="center" n1:id="@id/tv_noStream" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="60.0dip" n1:text="@string/no_video_found" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_thin" n1:textAlignment="center" />
-                <ProgressBar n1:id="@id/pb_loader" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="50.0dip" n1:indeterminate="true" n1:layout_below="@id/sliding_tabs" n1:layout_centerHorizontal="true" />
-                <TextView n1:textSize="30.0dip" n1:gravity="center" n1:id="@id/tv_no_record_found" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="60.0dip" n1:text="@string/no_record_found" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_thin" />
+            <RelativeLayout
+	android:id="@id/rl_vod_layout"
+	android:background="@color/light_gray"
+	android:paddingLeft="16.0dip"
+	android:paddingTop="16.0dip"
+	android:paddingRight="16.0dip"
+	android:paddingBottom="16.0dip"
+	android:clickable="true"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+                <TextView
+	android:id="@id/tv_view_provider"
+	android:visibility="invisible"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:text="gridView" />
+                <android.support.v7.widget.RecyclerView
+	android:id="@id/my_recycler_view"
+	android:clickable="true"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" />
+                <TextView
+	android:textSize="30.0dip"
+	android:gravity="center"
+	android:id="@id/tv_noStream"
+	android:visibility="invisible"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="60.0dip"
+	android:text="@string/no_video_found"
+	android:layout_centerHorizontal="true"
+	android:fontFamily="@string/font_family_thin"
+	android:textAlignment="center" />
+                <ProgressBar
+	android:id="@id/pb_loader"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="50.0dip"
+	android:indeterminate="true"
+	android:layout_below="@id/sliding_tabs"
+	android:layout_centerHorizontal="true" />
+                <TextView
+	android:textSize="30.0dip"
+	android:gravity="center"
+	android:id="@id/tv_no_record_found"
+	android:visibility="gone"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="60.0dip"
+	android:text="@string/no_record_found"
+	android:layout_centerHorizontal="true"
+	android:fontFamily="@string/font_family_thin" />
             </RelativeLayout>
-            <include n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/app_bar_drawer" />
+            <include
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" layout="@layout/app_bar_drawer" />
         </android.support.design.widget.AppBarLayout>
-        <android.support.design.widget.NavigationView n1:layout_gravity="start" n1:id="@id/nav_view" n1:fitsSystemWindows="true" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n3:headerLayout="@layout/nav_header_drawer" n3:itemBackground="@layout/nav_view_item_background" n3:menu="@menu/menu_dashboard" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <android.support.design.widget.NavigationView
+	android:layout_gravity="start"
+	android:id="@id/nav_view"
+	android:fitsSystemWindows="true"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent" app:headerLayout="@layout/nav_header_drawer" android:itemBackground="@layout/nav_view_item_background" app:menu="@menu/menu_dashboard" xmlns:app="http://schemas.android.com/apk/res-auto" />
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>

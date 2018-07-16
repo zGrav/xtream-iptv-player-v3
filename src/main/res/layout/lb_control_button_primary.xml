@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <ImageView n1:id="@id/button" n1:layout_width="@dimen/lb_control_button_diameter" n1:layout_height="@dimen/lb_control_button_height" n1:src="@drawable/lb_control_button_primary" n1:scaleType="center" style="?playbackControlsButtonStyle" />
-    <ImageView n1:layout_gravity="center" n1:id="@id/icon" n1:layout_width="@dimen/lb_control_icon_width" n1:layout_height="@dimen/lb_control_icon_height" />
-    <TextView n1:layout_gravity="center" n1:id="@id/label" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?playbackControlButtonLabelStyle" />
+<FrameLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+	android:id="@id/button"
+	android:layout_width="@dimen/lb_control_button_diameter"
+	android:layout_height="@dimen/lb_control_button_height"
+	android:src="@drawable/lb_control_button_primary"
+	android:scaleType="center" style="?playbackControlsButtonStyle" />
+    <ImageView
+	android:layout_gravity="center"
+	android:id="@id/icon"
+	android:layout_width="@dimen/lb_control_icon_width"
+	android:layout_height="@dimen/lb_control_icon_height" />
+    <TextView
+	android:layout_gravity="center"
+	android:id="@id/label"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" style="?playbackControlButtonLabelStyle" />
 </FrameLayout>

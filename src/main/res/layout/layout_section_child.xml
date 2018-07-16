@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="horizontal" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.RecyclerView n1:orientation="horizontal" n1:id="@id/my_recycler_view" n1:layout_width="wrap_content" n1:layout_height="210.0dip" n1:layout_marginTop="10.0dip" n1:layout_below="@id/tv_view_provider" />
+<RelativeLayout
+	android:orientation="horizontal"
+	android:background="@color/white"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView
+	android:orientation="horizontal"
+	android:id="@id/my_recycler_view"
+	android:layout_width="wrap_content"
+	android:layout_height="210.0dip"
+	android:layout_marginTop="10.0dip"
+	android:layout_below="@id/tv_view_provider" />
 </RelativeLayout>

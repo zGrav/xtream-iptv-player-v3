@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape n1:id="@id/listview_background_shape"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <padding n1:left="2.0dip" n1:top="2.0dip" n1:right="2.0dip" n1:bottom="2.0dip" />
-    <stroke n1:width="10.0dip" n1:color="#ff062a4b" />
-    <solid n1:color="#ff085dad" />
+<shape
+	android:id="@id/listview_background_shape"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding
+	android:left="2.0dip"
+	android:top="2.0dip"
+	android:right="2.0dip"
+	android:bottom="2.0dip" />
+    <stroke
+	android:width="10.0dip"
+	android:color="#ff062a4b" />
+    <solid
+	android:color="#ff085dad" />
 </shape>

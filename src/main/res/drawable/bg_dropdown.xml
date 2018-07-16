@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list>
-    <item>
+    <item xmlns:android="http://schemas.android.com/apk/res/android">
         <layer-list>
             <item>
                 <shape>
-                    <stroke n1:width="1.0dip" n1:color="@color/black"
-                      xmlns:n1="http://schemas.android.com/apk/res/android" />
-                    <corners n2:radius="3.0dip"
-                      xmlns:n2="http://schemas.android.com/apk/res/android" />
-                    <solid n3:color="@android:color/transparent"
-                      xmlns:n3="http://schemas.android.com/apk/res/android" />
+                    <stroke
+	android:width="1.0dip"
+	android:color="@color/black"
+                      />
+                    <corners android:radius="3.0dip"
+                       />
+                    <solid android:color="@android:color/transparent"
+                       />
                     <padding n4:left="5.0dip" n4:top="5.0dip" n4:right="5.0dip" n4:bottom="5.0dip"
                       xmlns:n4="http://schemas.android.com/apk/res/android" />
                 </shape>

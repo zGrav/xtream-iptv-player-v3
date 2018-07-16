@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:theme="@style/ThemeOverlay.AppCompat.Dark" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="160.0dip" n1:layout_centerHorizontal="true"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/profile_header" n1:background="@color/light_black" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true">
-        <ImageView n1:id="@id/iv_close_drawer" n1:background="@drawable/selector_drawer_close" n1:focusable="true" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="20.0dip" n1:src="@drawable/close" n1:layout_alignParentRight="true" n1:layout_alignParentEnd="true" />
-        <ImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/launcher_logo" n1:scaleType="fitXY" n1:alpha="0.08" />
-        <de.hdodenhof.circleimageview.CircleImageView n1:id="@id/iv_profile_image" n1:layout_width="90.0dip" n1:layout_height="90.0dip" n1:layout_marginTop="25.0dip" n1:src="@drawable/profile_pic" n1:layout_centerHorizontal="true" n2:civ_border_color="@color/light_black" n2:civ_border_width="2.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-        <TextView n1:textSize="16.0dip" n1:textColor="@android:color/white" n1:id="@id/tv_client_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="15.0dip" n1:layout_below="@id/iv_profile_image" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_regular" />
+<RelativeLayout
+	android:theme="@style/ThemeOverlay.AppCompat.Dark"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="160.0dip"
+	android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+	android:id="@id/profile_header"
+	android:background="@color/light_black"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_alignParentLeft="true"
+	android:layout_alignParentTop="true"
+	android:layout_alignParentStart="true">
+        <ImageView
+	android:id="@id/iv_close_drawer"
+	android:background="@drawable/selector_drawer_close"
+	android:focusable="true"
+	android:layout_width="30.0dip"
+	android:layout_height="30.0dip"
+	android:layout_marginTop="20.0dip"
+	android:layout_marginRight="20.0dip"
+	android:src="@drawable/close"
+	android:layout_alignParentRight="true"
+	android:layout_alignParentEnd="true" />
+        <ImageView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:src="@drawable/launcher_logo"
+	android:scaleType="fitXY"
+	android:alpha="0.08" />
+        <de.hdodenhof.circleimageview.CircleImageView
+	android:id="@id/iv_profile_image"
+	android:layout_width="90.0dip"
+	android:layout_height="90.0dip"
+	android:layout_marginTop="25.0dip"
+	android:src="@drawable/profile_pic"
+	android:layout_centerHorizontal="true" app:civ_border_color="@color/light_black" app:civ_border_width="2.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <TextView
+	android:textSize="16.0dip"
+	android:textColor="@android:color/white"
+	android:id="@id/tv_client_name"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="10.0dip"
+	android:layout_marginTop="15.0dip"
+	android:layout_below="@id/iv_profile_image"
+	android:layout_centerHorizontal="true"
+	android:fontFamily="@string/font_family_regular" />
     </RelativeLayout>
 </RelativeLayout>

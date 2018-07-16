@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Button n1:id="@id/lb_action_button" n1:layout_width="wrap_content" n1:layout_height="@dimen/lb_action_1_line_height" n1:lines="1" style="?detailsActionButtonStyle"
-  xmlns:n1="http://schemas.android.com/apk/res/android" />
+<Button
+	android:id="@id/lb_action_button"
+	android:layout_width="wrap_content"
+	android:layout_height="@dimen/lb_action_1_line_height"
+	android:lines="1" style="?detailsActionButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

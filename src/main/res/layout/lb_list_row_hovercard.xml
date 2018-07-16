@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:id="@id/hovercard_panel" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?rowHoverCardTitleStyle" />
-    <TextView n1:id="@id/description" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?rowHoverCardDescriptionStyle" />
+<LinearLayout
+	android:orientation="vertical"
+	android:id="@id/hovercard_panel"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+	android:id="@id/title"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" style="?rowHoverCardTitleStyle" />
+    <TextView
+	android:id="@id/description"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" style="?rowHoverCardDescriptionStyle" />
 </LinearLayout>

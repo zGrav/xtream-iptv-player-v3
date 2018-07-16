@@ -1,10 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:background="@color/light_gray" n1:paddingLeft="16.0dip" n1:paddingTop="16.0dip" n1:paddingRight="16.0dip" n1:paddingBottom="16.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:id="@id/tv_view_provider" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="gridView" />
-    <android.support.v7.widget.RecyclerView n1:id="@id/my_recycler_view" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
-    <TextView n1:textSize="30.0dip" n1:gravity="center" n1:id="@id/tv_noStream" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="60.0dip" n1:text="@string/no_stream_found" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_thin" n1:textAlignment="center" />
-    <TextView n1:textSize="14.0dip" n1:id="@id/tv_egp_required" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="60.0dip" n1:layout_marginBottom="50.0dip" n1:text="@string/epg_required_for_archive" n1:layout_alignParentBottom="true" n1:textAlignment="center" />
-    <ProgressBar n1:id="@id/pb_loader" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="50.0dip" n1:indeterminate="true" n1:layout_below="@id/sliding_tabs" n1:layout_centerHorizontal="true" />
-    <TextView n1:textSize="30.0dip" n1:gravity="center" n1:id="@id/tv_no_record_found" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="60.0dip" n1:text="@string/no_record_found" n1:layout_centerHorizontal="true" n1:fontFamily="@string/font_family_thin" />
+<RelativeLayout
+	android:background="@color/light_gray"
+	android:paddingLeft="16.0dip"
+	android:paddingTop="16.0dip"
+	android:paddingRight="16.0dip"
+	android:paddingBottom="16.0dip"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+	android:id="@id/tv_view_provider"
+	android:visibility="invisible"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:text="gridView" />
+    <android.support.v7.widget.RecyclerView
+	android:id="@id/my_recycler_view"
+	android:scrollbars="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" />
+    <TextView
+	android:textSize="30.0dip"
+	android:gravity="center"
+	android:id="@id/tv_noStream"
+	android:visibility="invisible"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="60.0dip"
+	android:text="@string/no_stream_found"
+	android:layout_centerHorizontal="true"
+	android:fontFamily="@string/font_family_thin"
+	android:textAlignment="center" />
+    <TextView
+	android:textSize="14.0dip"
+	android:id="@id/tv_egp_required"
+	android:visibility="invisible"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="60.0dip"
+	android:layout_marginBottom="50.0dip"
+	android:text="@string/epg_required_for_archive"
+	android:layout_alignParentBottom="true"
+	android:textAlignment="center" />
+    <ProgressBar
+	android:id="@id/pb_loader"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="50.0dip"
+	android:indeterminate="true"
+	android:layout_below="@id/sliding_tabs"
+	android:layout_centerHorizontal="true" />
+    <TextView
+	android:textSize="30.0dip"
+	android:gravity="center"
+	android:id="@id/tv_no_record_found"
+	android:visibility="gone"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="60.0dip"
+	android:text="@string/no_record_found"
+	android:layout_centerHorizontal="true"
+	android:fontFamily="@string/font_family_thin" />
 </RelativeLayout>

@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="64.0dip"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RadioButton n1:id="@id/radio" n1:focusable="false" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_marginEnd="10.0dip" n1:layout_alignParentEnd="true" />
-    <TextView n1:textSize="@dimen/cast_tracks_chooser_dialog_row_text_size" n1:id="@id/text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_toLeftOf="@id/radio" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n1:layout_marginStart="10.0dip" n1:layout_toStartOf="@id/radio" n1:layout_alignParentStart="true" />
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton
+	android:id="@id/radio"
+	android:focusable="false"
+	android:clickable="false"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginRight="10.0dip"
+	android:layout_alignParentRight="true"
+	android:layout_centerVertical="true"
+	android:layout_marginEnd="10.0dip"
+	android:layout_alignParentEnd="true" />
+    <TextView
+	android:textSize="@dimen/cast_tracks_chooser_dialog_row_text_size"
+	android:id="@id/text"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="10.0dip"
+	android:layout_toLeftOf="@id/radio"
+	android:layout_alignParentLeft="true"
+	android:layout_centerVertical="true"
+	android:layout_marginStart="10.0dip"
+	android:layout_toStartOf="@id/radio"
+	android:layout_alignParentStart="true" />
 </RelativeLayout>

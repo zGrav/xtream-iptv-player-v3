@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_focused="true" n1:drawable="@color/colorPrimaryFocus"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <item n2:state_selected="true" n2:drawable="@drawable/tab_background_selected"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:drawable="@color/colorPrimaryFocus" />
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/tab_background_selected" />
 </selector>

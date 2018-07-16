@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:textSize="20.0sp" n1:textStyle="bold" n1:id="@id/section" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="16sp" />
-    <View n1:background="#88424242" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="5.0dip" />
+<LinearLayout
+	android:orientation="vertical"
+	android:paddingLeft="16.0dip"
+	android:paddingRight="16.0dip"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+	android:textSize="20.0sp"
+	android:textStyle="bold"
+	android:id="@id/section"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="16sp" />
+    <View
+	android:background="#88424242"
+	android:layout_width="fill_parent"
+	android:layout_height="1.0dip"
+	android:layout_marginTop="5.0dip" />
 </LinearLayout>

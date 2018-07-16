@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector n1:constantSize="true"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <item n1:state_focused="true">
-        <shape n1:shape="oval">
-            <solid n1:color="@color/lb_control_button_color" />
-            <size n1:height="@dimen/lb_control_button_secondary_diameter" n1:width="@dimen/lb_control_button_secondary_diameter" />
+<selector
+	android:constantSize="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+	android:state_focused="true">
+        <shape
+	android:shape="oval">
+            <solid
+	android:color="@color/lb_control_button_color" />
+            <size
+	android:height="@dimen/lb_control_button_secondary_diameter"
+	android:width="@dimen/lb_control_button_secondary_diameter" />
         </shape>
     </item>
 </selector>

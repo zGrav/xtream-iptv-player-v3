@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_enabled="false" n1:color="?android:colorForeground" n2:alpha="0.1"
-      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-    <item n3:state_checked="true" n3:color="?colorControlActivated" n4:alpha="0.3"
-      xmlns:n3="http://schemas.android.com/apk/res/android" xmlns:n4="http://schemas.android.com/apk/res-auto" />
-    <item n5:color="?android:colorForeground" n6:alpha="0.3"
-      xmlns:n5="http://schemas.android.com/apk/res/android" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:state_enabled="false"
+        android:color="?android:colorForeground"
+        app:alpha="0.1" />
+    <item
+        android:state_checked="true"
+        android:color="?colorControlActivated"
+        app:alpha="0.3"/>
+    <item
+        android:color="?android:colorForeground"
+        app:alpha="0.3" />
 </selector>

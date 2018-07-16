@@ -1,14 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v17.leanback.widget.PlaybackControlsRowView n1:orientation="vertical" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:paddingStart="?playbackPaddingStart" n1:paddingEnd="?playbackPaddingEnd"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <LinearLayout n1:orientation="horizontal" n1:id="@id/controls_card" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/lb_playback_controls_margin_bottom">
-        <ImageView n1:id="@id/image" n1:layout_width="wrap_content" n1:layout_height="@dimen/lb_playback_controls_card_height" n1:scaleType="fitStart" n1:adjustViewBounds="true" />
-        <LinearLayout n1:layout_gravity="bottom" n1:orientation="vertical" n1:id="@id/controls_card_right_panel" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-            <FrameLayout n1:gravity="top" n1:id="@id/description_dock" n1:paddingTop="@dimen/lb_playback_description_margin_top" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginStart="@dimen/lb_playback_description_margin_start" n1:layout_marginEnd="@dimen/lb_playback_description_margin_end" />
-            <Space n1:id="@id/spacer" n1:layout_width="fill_parent" n1:layout_height="16.0dip" />
-            <FrameLayout n1:id="@id/controls_dock" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/lb_control_button_height" n1:layout_marginStart="@dimen/lb_playback_description_margin_start" n1:layout_marginEnd="@dimen/lb_playback_description_margin_end" />
+<android.support.v17.leanback.widget.PlaybackControlsRowView
+	android:orientation="vertical"
+	android:clipChildren="false"
+	android:clipToPadding="false"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingStart="?playbackPaddingStart"
+	android:paddingEnd="?playbackPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+	android:orientation="horizontal"
+	android:id="@id/controls_card"
+	android:clipChildren="false"
+	android:clipToPadding="false"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="@dimen/lb_playback_controls_margin_bottom">
+        <ImageView
+	android:id="@id/image"
+	android:layout_width="wrap_content"
+	android:layout_height="@dimen/lb_playback_controls_card_height"
+	android:scaleType="fitStart"
+	android:adjustViewBounds="true" />
+        <LinearLayout
+	android:layout_gravity="bottom"
+	android:orientation="vertical"
+	android:id="@id/controls_card_right_panel"
+	android:clipChildren="false"
+	android:clipToPadding="false"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+            <FrameLayout
+	android:gravity="top"
+	android:id="@id/description_dock"
+	android:paddingTop="@dimen/lb_playback_description_margin_top"
+	android:clipChildren="false"
+	android:clipToPadding="false"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginStart="@dimen/lb_playback_description_margin_start"
+	android:layout_marginEnd="@dimen/lb_playback_description_margin_end" />
+            <Space
+	android:id="@id/spacer"
+	android:layout_width="fill_parent"
+	android:layout_height="16.0dip" />
+            <FrameLayout
+	android:id="@id/controls_dock"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:minHeight="@dimen/lb_control_button_height"
+	android:layout_marginStart="@dimen/lb_playback_description_margin_start"
+	android:layout_marginEnd="@dimen/lb_playback_description_margin_end" />
         </LinearLayout>
     </LinearLayout>
-    <FrameLayout n1:layout_gravity="center_horizontal" n1:id="@id/secondary_controls_dock" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
-    <Space n1:id="@id/bottom_spacer" n1:layout_width="fill_parent" n1:layout_height="@dimen/lb_playback_controls_margin_bottom" />
+    <FrameLayout
+	android:layout_gravity="center_horizontal"
+	android:id="@id/secondary_controls_dock"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+    <Space
+	android:id="@id/bottom_spacer"
+	android:layout_width="fill_parent"
+	android:layout_height="@dimen/lb_playback_controls_margin_bottom" />
 </android.support.v17.leanback.widget.PlaybackControlsRowView>

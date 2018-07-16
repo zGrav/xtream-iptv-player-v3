@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:textAppearance="@style/TextAppearance.MediaRouter.Title" n1:ellipsize="end" n1:id="@id/mr_chooser_title" n1:paddingLeft="24.0dip" n1:paddingTop="24.0dip" n1:paddingRight="24.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/mr_chooser_title" n1:singleLine="true" />
-    <ListView n1:id="@id/mr_chooser_list" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:divider="@android:color/transparent" n1:dividerHeight="0.0dip" />
-    <LinearLayout n1:orientation="vertical" n1:id="@android:id/empty" n1:paddingLeft="16.0dip" n1:paddingTop="90.0dip" n1:paddingRight="16.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="240.0dip">
-        <TextView n1:textAppearance="@style/TextAppearance.MediaRouter.SecondaryText" n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/mr_chooser_searching" />
-        <ProgressBar n1:layout_gravity="center" n1:layout_width="150.0dip" n1:layout_height="wrap_content" n1:indeterminate="true" style="?android:progressBarStyleHorizontal" />
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+	android:textAppearance="@style/TextAppearance.MediaRouter.Title"
+	android:ellipsize="end"
+	android:id="@id/mr_chooser_title"
+	android:paddingLeft="24.0dip"
+	android:paddingTop="24.0dip"
+	android:paddingRight="24.0dip"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="@string/mr_chooser_title"
+	android:singleLine="true" />
+    <ListView
+	android:id="@id/mr_chooser_list"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:divider="@android:color/transparent"
+	android:dividerHeight="0.0dip" />
+    <LinearLayout
+	android:orientation="vertical"
+	android:id="@android:id/empty"
+	android:paddingLeft="16.0dip"
+	android:paddingTop="90.0dip"
+	android:paddingRight="16.0dip"
+	android:visibility="gone"
+	android:layout_width="fill_parent"
+	android:layout_height="240.0dip">
+        <TextView
+	android:textAppearance="@style/TextAppearance.MediaRouter.SecondaryText"
+	android:layout_gravity="center"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/mr_chooser_searching" />
+        <ProgressBar
+	android:layout_gravity="center"
+	android:layout_width="150.0dip"
+	android:layout_height="wrap_content"
+	android:indeterminate="true" style="?android:progressBarStyleHorizontal" />
     </LinearLayout>
 </LinearLayout>

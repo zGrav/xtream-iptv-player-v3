@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout n1:id="@id/playback_fragment_root" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <android.support.v17.leanback.widget.NonOverlappingFrameLayout n1:id="@id/playback_fragment_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
-    <android.support.v17.leanback.widget.NonOverlappingFrameLayout n1:id="@id/playback_controls_dock" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+<FrameLayout
+	android:id="@id/playback_fragment_root"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v17.leanback.widget.NonOverlappingFrameLayout
+	android:id="@id/playback_fragment_background"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" />
+    <android.support.v17.leanback.widget.NonOverlappingFrameLayout
+	android:id="@id/playback_controls_dock"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" />
 </FrameLayout>

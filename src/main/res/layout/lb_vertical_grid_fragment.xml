@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout n1:id="@id/browse_dummy" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <android.support.v17.leanback.widget.BrowseFrameLayout n1:id="@id/grid_frame" n1:focusable="true" n1:focusableInTouchMode="true" n1:descendantFocusability="afterDescendants" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
-        <FrameLayout n1:id="@id/browse_grid_dock" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+<FrameLayout
+	android:id="@id/browse_dummy"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v17.leanback.widget.BrowseFrameLayout
+	android:id="@id/grid_frame"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+	android:descendantFocusability="afterDescendants"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+        <FrameLayout
+	android:id="@id/browse_grid_dock"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" />
     </android.support.v17.leanback.widget.BrowseFrameLayout>
 </FrameLayout>

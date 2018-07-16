@@ -1,15 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:orientation="vertical" n1:id="@id/container_all" n1:paddingTop="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <View n1:background="@drawable/cast_mini_controller_gradient_light" n1:layout_width="fill_parent" n1:layout_height="5.0dip" />
-    <RelativeLayout n1:id="@id/container_current" n1:layout_width="fill_parent" n1:layout_height="@dimen/cast_mini_controller_icon_height">
-        <View n1:id="@id/center" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_centerVertical="true" />
-        <ImageView n1:id="@id/icon_view" n1:layout_width="@dimen/cast_mini_controller_icon_width" n1:layout_height="@dimen/cast_mini_controller_icon_height" n1:src="@drawable/cast_album_art_placeholder" n1:scaleType="centerCrop" n1:layout_alignParentLeft="true" n1:layout_alignParentStart="true" />
-        <ImageView n1:id="@id/button_0" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/cast_mini_controller_control_button_margin" n1:layout_toLeftOf="@id/button_1" n1:layout_centerVertical="true" n1:layout_marginEnd="@dimen/cast_mini_controller_control_button_margin" n1:layout_toStartOf="@id/button_1" />
-        <ImageView n1:id="@id/button_1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/cast_mini_controller_control_button_margin" n1:layout_toLeftOf="@id/button_2" n1:layout_centerVertical="true" n1:layout_marginEnd="@dimen/cast_mini_controller_control_button_margin" n1:layout_toStartOf="@id/button_2" />
-        <ImageView n1:id="@id/button_2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="8.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_marginEnd="8.0dip" n1:layout_alignParentEnd="true" />
-        <TextView n1:textAppearance="?castTitleTextAppearance" n1:ellipsize="end" n1:id="@id/title_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="8.0dip" n1:layout_marginBottom="-3.0dip" n1:maxLines="1" n1:layout_toLeftOf="@id/button_0" n1:layout_toRightOf="@id/icon_view" n1:layout_above="@id/center" n1:layout_marginStart="15.0dip" n1:layout_marginEnd="8.0dip" n1:layout_toStartOf="@id/button_0" n1:layout_toEndOf="@id/icon_view" />
-        <TextView n1:textAppearance="?castSubtitleTextAppearance" n1:ellipsize="end" n1:id="@id/subtitle_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:maxLines="1" n1:layout_toLeftOf="@id/button_0" n1:layout_toRightOf="@id/icon_view" n1:layout_below="@id/center" n1:layout_alignLeft="@id/title_view" n1:layout_alignRight="@id/title_view" n1:layout_toStartOf="@id/button_0" n1:layout_toEndOf="@id/icon_view" n1:layout_alignStart="@id/title_view" n1:layout_alignEnd="@id/title_view" />
-        <ProgressBar n1:id="@id/progressBar" n1:layout_width="fill_parent" n1:layout_height="5.0dip" n1:progressDrawable="@drawable/cast_mini_controller_progress_drawable" n1:layout_alignParentBottom="true" n1:layoutDirection="ltr" style="@android:style/Widget.ProgressBar.Horizontal" />
+<LinearLayout
+	android:orientation="vertical"
+	android:id="@id/container_all"
+	android:paddingTop="0.0dip"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+	android:background="@drawable/cast_mini_controller_gradient_light"
+	android:layout_width="fill_parent"
+	android:layout_height="5.0dip" />
+    <RelativeLayout
+	android:id="@id/container_current"
+	android:layout_width="fill_parent"
+	android:layout_height="@dimen/cast_mini_controller_icon_height">
+        <View
+	android:id="@id/center"
+	android:visibility="invisible"
+	android:layout_width="fill_parent"
+	android:layout_height="1.0dip"
+	android:layout_centerVertical="true" />
+        <ImageView
+	android:id="@id/icon_view"
+	android:layout_width="@dimen/cast_mini_controller_icon_width"
+	android:layout_height="@dimen/cast_mini_controller_icon_height"
+	android:src="@drawable/cast_album_art_placeholder"
+	android:scaleType="centerCrop"
+	android:layout_alignParentLeft="true"
+	android:layout_alignParentStart="true" />
+        <ImageView
+	android:id="@id/button_0"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginRight="@dimen/cast_mini_controller_control_button_margin"
+	android:layout_toLeftOf="@id/button_1"
+	android:layout_centerVertical="true"
+	android:layout_marginEnd="@dimen/cast_mini_controller_control_button_margin"
+	android:layout_toStartOf="@id/button_1" />
+        <ImageView
+	android:id="@id/button_1"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginRight="@dimen/cast_mini_controller_control_button_margin"
+	android:layout_toLeftOf="@id/button_2"
+	android:layout_centerVertical="true"
+	android:layout_marginEnd="@dimen/cast_mini_controller_control_button_margin"
+	android:layout_toStartOf="@id/button_2" />
+        <ImageView
+	android:id="@id/button_2"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginRight="8.0dip"
+	android:layout_alignParentRight="true"
+	android:layout_centerVertical="true"
+	android:layout_marginEnd="8.0dip"
+	android:layout_alignParentEnd="true" />
+        <TextView
+	android:textAppearance="?castTitleTextAppearance"
+	android:ellipsize="end"
+	android:id="@id/title_view"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="15.0dip"
+	android:layout_marginRight="8.0dip"
+	android:layout_marginBottom="-3.0dip"
+	android:maxLines="1"
+	android:layout_toLeftOf="@id/button_0"
+	android:layout_toRightOf="@id/icon_view"
+	android:layout_above="@id/center"
+	android:layout_marginStart="15.0dip"
+	android:layout_marginEnd="8.0dip"
+	android:layout_toStartOf="@id/button_0"
+	android:layout_toEndOf="@id/icon_view" />
+        <TextView
+	android:textAppearance="?castSubtitleTextAppearance"
+	android:ellipsize="end"
+	android:id="@id/subtitle_view"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="3.0dip"
+	android:maxLines="1"
+	android:layout_toLeftOf="@id/button_0"
+	android:layout_toRightOf="@id/icon_view"
+	android:layout_below="@id/center"
+	android:layout_alignLeft="@id/title_view"
+	android:layout_alignRight="@id/title_view"
+	android:layout_toStartOf="@id/button_0"
+	android:layout_toEndOf="@id/icon_view"
+	android:layout_alignStart="@id/title_view"
+	android:layout_alignEnd="@id/title_view" />
+        <ProgressBar
+	android:id="@id/progressBar"
+	android:layout_width="fill_parent"
+	android:layout_height="5.0dip"
+	android:progressDrawable="@drawable/cast_mini_controller_progress_drawable"
+	android:layout_alignParentBottom="true"
+	android:layoutDirection="ltr" style="@android:style/Widget.ProgressBar.Horizontal" />
     </RelativeLayout>
 </LinearLayout>

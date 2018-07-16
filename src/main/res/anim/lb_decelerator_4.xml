@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<decelerateInterpolator n1:factor="4.0"
-  xmlns:n1="http://schemas.android.com/apk/res/android" />
+<decelerateInterpolator
+    android:factor="4.0"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

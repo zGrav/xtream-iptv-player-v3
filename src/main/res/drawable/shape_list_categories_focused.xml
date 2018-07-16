@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape n1:id="@id/listview_background_shape"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <solid n1:color="#8df5efef" />
+<shape
+	android:id="@id/listview_background_shape"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+	android:color="#8df5efef" />
 </shape>

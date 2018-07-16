@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu>
-    <item n1:icon="@drawable/menu_dots" n1:id="@id/empty" n1:orderInCategory="101" n1:title="inner" n2:showAsAction="always"
-      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+		android:icon="@drawable/menu_dots"
+		android:id="@id/empty"
+		android:orderInCategory="101"
+		android:title="inner"
+        app:showAsAction="always">
         <menu>
-            <item n1:icon="@drawable/logout_icon_menu" n1:id="@id/action_logout" n1:orderInCategory="100" n1:title="@string/menu_logout" />
-            <item n1:icon="@drawable/livetv_icon_menu" n1:id="@id/menu_load_channels_vod" n1:title="@string/load_channels_vod_series" />
-            <item n1:icon="@drawable/guide_icon_menu" n1:id="@id/menu_load_tv_guide" n1:title="@string/load_tv_guide" />
+            <item
+				android:icon="@drawable/logout_icon_menu"
+				android:id="@id/action_logout"
+				android:orderInCategory="100"
+				android:title="@string/menu_logout" />
+            <item
+				android:icon="@drawable/livetv_icon_menu"
+				android:id="@id/menu_load_channels_vod"
+				android:title="@string/load_channels_vod_series" />
+            <item
+				android:icon="@drawable/guide_icon_menu"
+				android:id="@id/menu_load_tv_guide"
+				android:title="@string/load_tv_guide" />
         </menu>
     </item>
 </menu>

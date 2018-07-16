@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<transitionSet>
-    <slide n1:interpolator="@android:interpolator/fast_out_linear_in" n1:duration="350" n1:slideEdge="bottom"
-      xmlns:n1="http://schemas.android.com/apk/res/android">
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <slide
+        android:interpolator="@android:interpolator/fast_out_linear_in"
+        android:duration="350"
+        android:slideEdge="bottom">
         <targets>
-            <target n1:excludeId="@id/title_orb" />
-            <target n1:excludeId="@id/title_text" />
-            <target n1:excludeId="@id/title_badge" />
+            <target
+	            android:excludeId="@id/title_orb" />
+            <target
+	            android:excludeId="@id/title_text" />
+            <target
+	            android:excludeId="@id/title_badge" />
         </targets>
     </slide>
-    <fade n2:interpolator="@android:interpolator/fast_out_linear_in" n2:duration="350"
-      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <fade android:interpolator="@android:interpolator/fast_out_linear_in" android:duration="350" />
 </transitionSet>

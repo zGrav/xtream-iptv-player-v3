@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout n1:orientation="vertical" n1:id="@id/rl_category1" n1:background="@drawable/selector_checkbox" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <RelativeLayout n1:id="@id/rl_category" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip">
-        <TextView n1:textSize="15.0dip" n1:textColor="@color/black" n1:id="@id/tv_category_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="15.0dip" n1:text="INDIA" n1:layout_centerVertical="true" n1:fontFamily="@string/font_family_regular" />
-        <ImageView n1:id="@id/iv_lock_staus" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip" n1:src="@drawable/lock_open" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
-    </RelativeLayout>><ImageView n1:id="@id/iv_divider" n1:background="@color/service_status_terminated" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="10.0dip" n1:layout_below="@id/rl_category" />
+<RelativeLayout
+	android:orientation="vertical"
+	android:id="@id/rl_category1"
+	android:background="@drawable/selector_checkbox"
+	android:focusable="true"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+	android:id="@id/rl_category"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="5.0dip">
+        <TextView
+	android:textSize="15.0dip"
+	android:textColor="@color/black"
+	android:id="@id/tv_category_name"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="20.0dip"
+	android:layout_marginTop="10.0dip"
+	android:layout_marginRight="15.0dip"
+	android:text="INDIA"
+	android:layout_centerVertical="true"
+	android:fontFamily="@string/font_family_regular" />
+        <ImageView
+	android:id="@id/iv_lock_staus"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginRight="20.0dip"
+	android:src="@drawable/lock_open"
+	android:layout_alignParentRight="true"
+	android:layout_centerVertical="true" />
+    </RelativeLayout>><ImageView
+	android:id="@id/iv_divider"
+	android:background="@color/service_status_terminated"
+	android:layout_width="fill_parent"
+	android:layout_height="1.0px"
+	android:layout_marginLeft="20.0dip"
+	android:layout_marginTop="8.0dip"
+	android:layout_marginRight="20.0dip"
+	android:layout_marginBottom="10.0dip"
+	android:layout_below="@id/rl_category" />
 </RelativeLayout>

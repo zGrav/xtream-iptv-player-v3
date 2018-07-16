@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set>
-    <objectAnimator n1:duration="333" n1:valueFrom="0.0" n1:valueTo="1.0" n1:propertyName="alpha"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <objectAnimator
+        android:duration="333"
+        android:valueFrom="0.0"
+        android:valueTo="1.0"
+        android:propertyName="alpha"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
 </set>

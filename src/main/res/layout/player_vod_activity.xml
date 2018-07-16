@@ -1,23 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout n1:id="@id/root" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:keepScreenOn="true"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <com.google.android.exoplayer2.ui.SimpleExoPlayerView n1:id="@id/player_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:controller_layout_id="@layout/exo_playback_control_view_custom_vod" n2:resize_mode="fill" n2:show_timeout="4000" n2:theme="@style/AppTheme" n2:use_controller="true" xmlns:n2="http://schemas.android.com/apk/res-auto" />
-    <LinearLayout n1:layout_gravity="center" n1:orientation="vertical" n1:background="#88000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-        <TextView n1:textSize="10.0sp" n1:id="@id/debug_text_view" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
-        <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="horizontal" n1:id="@id/controls_root" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
-            <android.support.v7.widget.AppCompatButton n1:textColor="@color/white" n1:id="@id/retry_button" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/retry" n1:drawableLeft="@android:drawable/stat_notify_sync_noanim" n1:drawablePadding="10.0dip" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+<FrameLayout
+	android:id="@id/root"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+	android:id="@id/player_view"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" app:controller_layout_id="@layout/exo_playback_control_view_custom_vod" app:resize_mode="fill" app:show_timeout="4000" android:theme="@style/AppTheme" app:use_controller="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout
+	android:layout_gravity="center"
+	android:orientation="vertical"
+	android:background="#88000000"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+        <TextView
+	android:textSize="10.0sp"
+	android:id="@id/debug_text_view"
+	android:paddingLeft="4.0dip"
+	android:paddingRight="4.0dip"
+	android:visibility="gone"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" />
+        <LinearLayout
+	android:gravity="center"
+	android:layout_gravity="center"
+	android:orientation="horizontal"
+	android:id="@id/controls_root"
+	android:visibility="gone"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton
+	android:textColor="@color/white"
+	android:id="@id/retry_button"
+	android:visibility="gone"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/retry"
+	android:drawableLeft="@android:drawable/stat_notify_sync_noanim"
+	android:drawablePadding="10.0dip" style="@style/Base.Widget.AppCompat.Button.Borderless" />
         </LinearLayout>
     </LinearLayout>
-    <RelativeLayout n1:orientation="horizontal" n1:id="@id/rl_channel_list" n1:paddingBottom="202.0dip" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="1.0">
-        <LinearLayout n1:id="@id/ll_categories_view" n1:visibility="gone" n1:layout_width="230.0dip" n1:layout_height="wrap_content" n1:layout_alignParentRight="true">
-            <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/btn_category_back" n1:background="#96000000" n1:padding="5.0dip" n1:layout_width="30.0dip" n1:layout_height="40.0dip" n1:foreground="?android:selectableItemBackground" n3:srcCompat="@drawable/left_icon_cat" xmlns:n3="http://schemas.android.com/apk/res-auto" />
-            <TextView n1:textSize="14.0dip" n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/tv_categories_view" n1:background="#96000000" n1:padding="10.0dip" n1:visibility="visible" n1:nextFocusDown="@id/et_search" n1:layout_width="170.0dip" n1:layout_height="40.0dip" n1:layout_alignParentRight="true" n1:textAlignment="center" />
-            <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center" n1:id="@id/btn_category_forward" n1:background="#96000000" n1:padding="5.0dip" n1:layout_width="30.0dip" n1:layout_height="40.0dip" n1:foreground="?android:selectableItemBackground" n4:srcCompat="@drawable/right_icon_cat" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout
+	android:orientation="horizontal"
+	android:id="@id/rl_channel_list"
+	android:paddingBottom="202.0dip"
+	android:visibility="visible"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_weight="1.0">
+        <LinearLayout
+	android:id="@id/ll_categories_view"
+	android:visibility="gone"
+	android:layout_width="230.0dip"
+	android:layout_height="wrap_content"
+	android:layout_alignParentRight="true">
+            <android.support.v7.widget.AppCompatImageView
+	android:layout_gravity="center"
+	android:id="@id/btn_category_back"
+	android:background="#96000000"
+	android:padding="5.0dip"
+	android:layout_width="30.0dip"
+	android:layout_height="40.0dip"
+	android:foreground="?android:selectableItemBackground" app:srcCompat="@drawable/left_icon_cat" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <TextView
+	android:textSize="14.0dip"
+	android:textStyle="bold"
+	android:textColor="@color/white"
+	android:id="@id/tv_categories_view"
+	android:background="#96000000"
+	android:padding="10.0dip"
+	android:visibility="visible"
+	android:nextFocusDown="@id/et_search"
+	android:layout_width="170.0dip"
+	android:layout_height="40.0dip"
+	android:layout_alignParentRight="true"
+	android:textAlignment="center" />
+            <android.support.v7.widget.AppCompatImageView
+	android:layout_gravity="center"
+	android:id="@id/btn_category_forward"
+	android:background="#96000000"
+	android:padding="5.0dip"
+	android:layout_width="30.0dip"
+	android:layout_height="40.0dip"
+	android:foreground="?android:selectableItemBackground" n4:srcCompat="@drawable/right_icon_cat" xmlns:n4="http://schemas.android.com/apk/res-auto" />
         </LinearLayout>
-        <EditText n1:textSize="14.0dip" n1:textStyle="bold" n1:textColor="@color/white" n1:textColorHint="@color/white" n1:id="@id/et_search" n1:background="@drawable/selector_search_fields" n1:padding="10.0dip" n1:visibility="gone" n1:nextFocusDown="@id/lv_ch" n1:layout_width="230.0dip" n1:layout_height="40.0dip" n1:hint="Search" n1:layout_below="@id/ll_categories_view" n1:layout_alignParentRight="true" n1:imeOptions="flagNoExtractUi" />
-        <ListView n1:id="@id/lv_ch" n1:background="#96000000" n1:focusable="true" n1:visibility="gone" n1:nextFocusUp="@id/et_search" n1:layout_width="230.0dip" n1:layout_height="wrap_content" n1:listSelector="@drawable/bg_key" n1:layout_below="@id/et_search" n1:layout_alignParentRight="true">
+        <EditText
+	android:textSize="14.0dip"
+	android:textStyle="bold"
+	android:textColor="@color/white"
+	android:textColorHint="@color/white"
+	android:id="@id/et_search"
+	android:background="@drawable/selector_search_fields"
+	android:padding="10.0dip"
+	android:visibility="gone"
+	android:nextFocusDown="@id/lv_ch"
+	android:layout_width="230.0dip"
+	android:layout_height="40.0dip"
+	android:hint="Search"
+	android:layout_below="@id/ll_categories_view"
+	android:layout_alignParentRight="true"
+	android:imeOptions="flagNoExtractUi" />
+        <ListView
+	android:id="@id/lv_ch"
+	android:background="#96000000"
+	android:focusable="true"
+	android:visibility="gone"
+	android:nextFocusUp="@id/et_search"
+	android:layout_width="230.0dip"
+	android:layout_height="wrap_content"
+	android:listSelector="@drawable/bg_key"
+	android:layout_below="@id/et_search"
+	android:layout_alignParentRight="true">
             <requestFocus />
         </ListView>
     </RelativeLayout>
-    <ProgressBar n1:layout_gravity="center" n1:id="@id/progress_loader" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <ProgressBar
+	android:layout_gravity="center"
+	android:id="@id/progress_loader"
+	android:visibility="visible"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
 </FrameLayout>

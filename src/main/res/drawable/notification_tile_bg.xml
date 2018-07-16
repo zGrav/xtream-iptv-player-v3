@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bitmap n1:src="@drawable/notify_panel_notification_icon_bg" n1:tileMode="repeat"
-  xmlns:n1="http://schemas.android.com/apk/res/android" />
+<bitmap
+	android:src="@drawable/notify_panel_notification_icon_bg"
+	android:tileMode="repeat"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

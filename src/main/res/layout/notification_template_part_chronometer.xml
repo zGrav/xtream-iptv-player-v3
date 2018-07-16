@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Chronometer n1:textAppearance="@style/TextAppearance.Compat.Notification.Time" n1:id="@id/chronometer" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true"
-  xmlns:n1="http://schemas.android.com/apk/res/android" />
+<Chronometer
+	android:textAppearance="@style/TextAppearance.Compat.Notification.Time"
+	android:id="@id/chronometer"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

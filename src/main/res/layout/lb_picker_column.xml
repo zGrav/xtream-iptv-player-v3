@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v17.leanback.widget.VerticalGridView n1:id="@id/column" n1:clipToPadding="false" n1:layout_width="wrap_content" n1:layout_height="@dimen/picker_item_height" n1:verticalSpacing="@dimen/picker_item_spacing" n1:importantForAccessibility="no" n1:paddingStart="@dimen/picker_column_horizontal_padding" n1:paddingEnd="@dimen/picker_column_horizontal_padding" n2:columnWidth="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+<android.support.v17.leanback.widget.VerticalGridView
+	android:id="@id/column"
+	android:clipToPadding="false"
+	android:layout_width="wrap_content"
+	android:layout_height="@dimen/picker_item_height"
+	android:verticalSpacing="@dimen/picker_item_spacing"
+	android:importantForAccessibility="no"
+	android:paddingStart="@dimen/picker_column_horizontal_padding"
+	android:paddingEnd="@dimen/picker_column_horizontal_padding" app:columnWidth="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

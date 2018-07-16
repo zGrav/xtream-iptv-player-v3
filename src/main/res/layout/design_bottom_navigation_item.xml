@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge>
-    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/icon" n1:duplicateParentState="true" n1:layout_width="24.0dip" n1:layout_height="24.0dip" n1:layout_marginTop="@dimen/design_bottom_navigation_margin" n1:layout_marginBottom="@dimen/design_bottom_navigation_margin"
-      xmlns:n1="http://schemas.android.com/apk/res/android" />
-    <android.support.design.internal.BaselineLayout n2:layout_gravity="bottom|center" n2:paddingBottom="10.0dip" n2:duplicateParentState="true" n2:clipToPadding="false" n2:layout_width="wrap_content" n2:layout_height="wrap_content"
-      xmlns:n2="http://schemas.android.com/apk/res/android">
-        <TextView n2:textSize="@dimen/design_bottom_navigation_text_size" n2:id="@id/smallLabel" n2:duplicateParentState="true" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:singleLine="true" />
-        <TextView n2:textSize="@dimen/design_bottom_navigation_active_text_size" n2:id="@id/largeLabel" n2:visibility="invisible" n2:duplicateParentState="true" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:singleLine="true" />
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+		android:layout_gravity="center_horizontal"
+		android:id="@id/icon"
+		android:duplicateParentState="true"
+		android:layout_width="24.0dip"
+		android:layout_height="24.0dip"
+		android:layout_marginTop="@dimen/design_bottom_navigation_margin"
+		android:layout_marginBottom="@dimen/design_bottom_navigation_margin"
+      	 />
+    <android.support.design.internal.BaselineLayout
+		android:layout_gravity="bottom|center"
+		android:paddingBottom="10.0dip"
+		android:duplicateParentState="true"
+		android:clipToPadding="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+      >
+        <TextView
+			android:textSize="@dimen/design_bottom_navigation_text_size"
+			android:id="@id/smallLabel"
+			android:duplicateParentState="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true" />
+        <TextView
+			android:textSize="@dimen/design_bottom_navigation_active_text_size"
+			android:id="@id/largeLabel"
+			android:visibility="invisible"
+			android:duplicateParentState="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true" />
     </android.support.design.internal.BaselineLayout>
 </merge>

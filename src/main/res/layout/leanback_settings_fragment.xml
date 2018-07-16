@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v17.preference.LeanbackSettingsRootView n1:id="@id/settings_dialog_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <FrameLayout n1:layout_gravity="end" n1:id="@id/settings_preference_fragment_container" n1:layout_width="@dimen/lb_settings_pane_width" n1:layout_height="fill_parent" />
+<android.support.v17.preference.LeanbackSettingsRootView
+	android:id="@id/settings_dialog_container"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+	android:layout_gravity="end"
+	android:id="@id/settings_preference_fragment_container"
+	android:layout_width="@dimen/lb_settings_pane_width"
+	android:layout_height="fill_parent" />
 </android.support.v17.preference.LeanbackSettingsRootView>
